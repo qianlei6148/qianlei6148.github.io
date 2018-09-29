@@ -39,7 +39,8 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: url(/assets/blogImg/timg3.png)"></div>
+<div class="overlay"></div>
+<!-- 注释去除头像上方的背景<div class="overlay" style="background: #4d4d4d"></div>  -->
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -90,7 +91,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: url(/assets/blogImg/timg3.png)"></div>
+  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -172,7 +173,7 @@
     	 
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/27/FirstBlood/">FirstBlood11</a>
+      <a class="archive-article-title" href="/2018/09/27/FirstBlood/">FirstBlog</a>
     </h1>
   
 
@@ -236,7 +237,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -295,6 +296,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
