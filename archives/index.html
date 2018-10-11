@@ -36,9 +36,57 @@
 
   
 
+  <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script>
+  <script type="text/javascript">
+    L2Dwidget.init({
+		  model: {
+			jsonPath: '/./packages/live2d-widget-model-wanko/assets/wanko.model.json',
+			<!-- jsonPath: 'https://unpkg.com/live2d-widget-model-shizuku@latest/assets/shizuku.model.json', -->
+			<!-- jsonPath: 'https://github.com/xiazeyu/live2d-widget-models/tree/master/packages/live2d-widget-model-chitose/assets/chitose.model.json', -->
+			
+			scale: 1,
+			hHeadPos: 0.5,
+			vHeadPos: 0.618,
+			myDefine: []
+		  },
+		  display: {
+			superSample: 2,
+			width: 100,
+			height: 200,
+			position: 'right',
+			hOffset: 0,
+			vOffset: -20
+		  },
+		  mobile: {
+			show: true,
+			scale: 0.5,
+			motion: true
+		  },
+		  name: {
+			canvas: 'live2dcanvas',
+			div: 'live2d-widget'
+		  },
+		  react: {
+			opacityDefault: 0.7,
+			opacityOnHover: 0.2
+			
+		  },
+		  dev: {
+			log: false,
+			border: false,
+			mouseLog: false
+			
+		  }
+		});
+  </script>
 </head>
 
 <body>
+  <div id="live2d-widget">
+		<canvas id="live2dcanvas" width="300" height="600" style="position: fixed; opacity: 0.7; 
+			right: 0px; bottom: -20px; z-index: 99999; pointer-events: none; border: 1px dashed rgb(204, 204, 204);">
+		</canvas>
+  </div>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow" style="background: url(/assets/blogImg/timg2.png)no-repeat 100%;background-size:cover;">
@@ -164,6 +212,48 @@
           <a href="/archives/2018" class="archive-year">2018</a>
         </div>
         <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/10/11/hexo模版yilia添加可爱的看板娘/" class="archive-article-date">
+  	<time datetime="2018-10-11T14:04:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/10/11/hexo模版yilia添加可爱的看板娘/">hexo模版yilia添加可爱的看板娘</a>
+    </h1>
+  
+
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
@@ -489,19 +579,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">first</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
             
             <div class="clearfix"></div>
