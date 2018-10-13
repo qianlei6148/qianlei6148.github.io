@@ -211,6 +211,85 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-提取音乐外链链接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/13/提取音乐外链链接/">提取音乐外链链接</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/13/提取音乐外链链接/" class="archive-article-date">
+  	<time datetime="2018-10-13T02:52:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在自己博客放了aplayer音乐播放器，需要自己音乐链接。<br>首先就要获取音乐网站的音乐外链啦~~~</p>
+<blockquote>
+<p>网易云音乐<br>酷我音乐</p>
+</blockquote>
+<p>首先是网易云<br>打开网易云音乐，找到歌曲，播放，复制网址的ID<br>比如：<code>https://music.163.com/#/song?id=38689229</code>，<code>id</code>为<code>38689229</code>，然后很简单把id放入下面的链接中<br><code>http://music.163.com/song/media/outer/url?id=ID数字.mp3</code>。<br>结果就是这样<code>http://music.163.com/song/media/outer/url?id=38689229.mp3</code>，这个就是外链链接！<br>如果需要歌词，可以把歌曲下载下来，然后在本地：<code>Win7以上C:\Users\用户名\AppData\Local\Netease\CloudMusic\webdata\lyric</code>然后搜<code>id</code>就行了。</p>
+<p>酷我音乐<br>同样的，获取歌曲的ID，然后复制到这个网址<br><code>http://player.kuwo.cn/webmusic/st/getNewMuiseByRid?rid=MUSIC_ID数字</code><br>比如：<br><code>http://player.kuwo.cn/webmusic/st/getNewMuiseByRid?rid=MUSIC_3747131</code>，然后打开该网址<br><img src="https://i.loli.net/2018/10/13/5bc180dad63cf.png" alt=""><br>根据这样组合<code>http:// + 网址 + /resource/ + Mp3歌曲地址</code>结果如下<code>http://rh01.sycdn.kuwo.cn/resource/n2/99/25/305360002.mp3</code>这就是外链链接！~<br>至于歌词你可以下载，然后下载目录下<code>KwDownload\Lyric</code>。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/13/提取音乐外链链接/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo模版yilia添加可爱的看板娘" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -814,6 +893,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hexo,Live2D</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
               </li>
             
             <div class="clearfix"></div>
