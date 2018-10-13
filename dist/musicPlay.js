@@ -11,7 +11,7 @@ const ap = new APlayer({
     mutex: true,//是否不允许多个播放器同时播放
     listFolded: true,//是否默认收起播放列表
     listMaxHeight: 90,//播放列表的高度
-    //lrcType: 3,
+    //lrcType: 3, //使用lrc文件提供歌词
 	//网易云默认外链链接：http://music.163.com/song/media/outer/url?id=ID数字.mp3
     audio: [
         {
@@ -60,7 +60,11 @@ const ap = new APlayer({
 			lrc: '/./dist/music/lrc/湘南乃風-Just Live More.lrc',
             theme: '#46718b'
         }
-		// {
+    ]
+});
+
+
+// {
             // name: 'The Dawn (亡灵序曲完美钢琴版) [Cover Dreamtale]',
             // artist: 'Mike Zhou',
             // url: 'http://music.163.com/song/media/outer/url?id=476592630.mp3',
@@ -81,6 +85,3 @@ const ap = new APlayer({
 			// url: 'https://moeplayer.b0.upaiyun.com/aplayer/yuruyuri.mp3',
 			// cover: 'https://moeplayer.b0.upaiyun.com/aplayer/yuruyuri.jpg'
 		// }
-
-    ]
-});

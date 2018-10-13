@@ -7,16 +7,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>photos | Wa!RayQ&#39;s house</title>
+  <title>为hexo博客yilia模版添加aplayer音乐播放器 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="photos">
-<meta property="og:url" content="http://yoursite.com/photos/index.html">
+  <meta name="description" content="属性参数可以自己查看官方文档。">
+<meta name="keywords" content="music,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为hexo博客yilia模版添加aplayer音乐播放器">
+<meta property="og:url" content="http://yoursite.com/2018/10/13/为博客添加aplayer音乐播放器/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
+<meta property="og:description" content="属性参数可以自己查看官方文档。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-28T05:46:33.009Z">
+<meta property="og:updated_time" content="2018-10-13T06:01:19.398Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="photos">
+<meta name="twitter:title" content="为hexo博客yilia模版添加aplayer音乐播放器">
+<meta name="twitter:description" content="属性参数可以自己查看官方文档。">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
   
@@ -210,27 +214,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-为博客添加aplayer音乐播放器" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      photos
+      为hexo博客yilia模版添加aplayer音乐播放器
     </h1>
   
 
         
-        <a href="/photos/index.html" class="archive-article-date">
-  	<time datetime="2018-09-28T05:46:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-28</time>
+        <a href="/2018/10/13/为博客添加aplayer音乐播放器/" class="archive-article-date">
+  	<time datetime="2018-10-13T05:34:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>属性参数可以自己查看<a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noopener">官方文档</a>。</p>
+<a id="more"></a>
+<p>先下载<a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">js和css文件</a>，如果你是hexo，可以<code>npm install aplayer --save</code>，然后把其中<code>dist</code>文件夹放到<code>\themes\yilia\source</code>中<br>在<code>\themes\yilia\layout\layout.ejs</code>的<code>body</code>标签下的任意位置添加下面代码<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/./dist/APlayer.min.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"aplayer"</span> <span class="attr">style</span>=<span class="string">"z-index: 99999;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/./dist/hls.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/./dist/APlayer.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/./dist/musicPlay.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>其中<code>id</code>为<code>aplayer</code>就是你要把浏览器放置的地方，样式<code>z-index</code>则是为了让播放器显示载最上面一层，而<code>hls.min.js</code>文件则可以看<a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noopener">文档</a>。<br>然后再<code>\themes\yilia\source\dist</code>建立一个<code>js</code>文件，名字任意，我建的是<code>musicPlay.js</code>，在其中写下如下代码<br><strong>注意 <code>container</code>对应<code>id</code>为<code>aplayer</code>，别改了上面忘了下面。</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ap = <span class="keyword">new</span> APlayer(&#123;</span><br><span class="line">    container: <span class="built_in">document</span>.getElementById(<span class="string">'aplayer'</span>),</span><br><span class="line">    <span class="comment">// mini: false,</span></span><br><span class="line">    fixed: <span class="literal">true</span>,<span class="comment">//吸底模式</span></span><br><span class="line">    autoplay: <span class="literal">false</span>,<span class="comment">//默认是否自动播放</span></span><br><span class="line">    theme: <span class="string">'#FADFA3'</span>,</span><br><span class="line">    loop: <span class="string">'all'</span>,</span><br><span class="line">    order: <span class="string">'random'</span>,</span><br><span class="line">    preload: <span class="string">'auto'</span>,</span><br><span class="line">    volume: <span class="number">0.7</span>,<span class="comment">//默认音量</span></span><br><span class="line">    mutex: <span class="literal">true</span>,<span class="comment">//是否不允许多个播放器同时播放</span></span><br><span class="line">    listFolded: <span class="literal">true</span>,<span class="comment">//是否默认收起播放列表</span></span><br><span class="line">    listMaxHeight: <span class="number">90</span>,<span class="comment">//播放列表的高度</span></span><br><span class="line">    <span class="comment">//lrcType: 3, //使用lrc文件提供歌词</span></span><br><span class="line">	<span class="comment">//网易云默认外链链接：http://music.163.com/song/media/outer/url?id=ID数字.mp3</span></span><br><span class="line">    audio: [</span><br><span class="line">        &#123;</span><br><span class="line">            name: <span class="string">'SURPRISE-DRIVE'</span>,</span><br><span class="line">            artist: <span class="string">'松冈充'</span>,</span><br><span class="line">            url: <span class="string">'http://music.163.com/song/media/outer/url?id=29751409.mp3'</span>,</span><br><span class="line">            cover: <span class="string">'http://p1.music.126.net/Oo0kXusaoF9DGwjAJFeAtA==/6671836558494023.jpg'</span>,</span><br><span class="line">            lrc: <span class="string">'/./dist/music/lrc/29751409.lrc'</span>,</span><br><span class="line">            theme: <span class="string">'#46718b'</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name: <span class="string">'Be The One'</span>,</span><br><span class="line">            artist: <span class="string">'PANDORA / Beverly'</span>,</span><br><span class="line">            url: <span class="string">'http://music.163.com/song/media/outer/url?id=530986958.mp3'</span>,</span><br><span class="line">            cover: <span class="string">'http://p1.music.126.net/91YBBcxEO37hoIfm9W5TjA==/109951163116520306.jpg'</span>,</span><br><span class="line">            theme: <span class="string">'#46718b'</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            name: <span class="string">'我ら思う、故に我ら在り'</span>,</span><br><span class="line">            artist: <span class="string">'氣志團'</span>,</span><br><span class="line">            url: <span class="string">'http://music.163.com/song/media/outer/url?id=40729281.mp3'</span>,</span><br><span class="line">            cover: <span class="string">'http://p1.music.126.net/5kUo3f5_GyyQNiSvPOIhXA==/18610333813518047.jpg'</span>,</span><br><span class="line">            theme: <span class="string">'#46718b'</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            name: <span class="string">'Anything Goes! (「仮面ライダーオーズ/000」)'</span>,</span><br><span class="line">            artist: <span class="string">'大黒摩季'</span>,</span><br><span class="line">            url: <span class="string">'http://music.163.com/song/media/outer/url?id=38689229.mp3'</span>,</span><br><span class="line">            cover: <span class="string">'http://p2.music.126.net/mQxtTZ1t2ZHS8LJ4qEDLWQ==/2543170398297999.jpg'</span>,</span><br><span class="line">            lrc: <span class="string">'/./dist/music/lrc/38689229.lrc'</span>,</span><br><span class="line">	    theme: <span class="string">'#46718b'</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            name: <span class="string">'Break the Chain (「仮面ライダーキバ」)'</span>,</span><br><span class="line">            artist: <span class="string">'Tourbillon'</span>,</span><br><span class="line">            url: <span class="string">'http://music.163.com/song/media/outer/url?id=38689234.mp3'</span>,</span><br><span class="line">            cover: <span class="string">'http://p2.music.126.net/mQxtTZ1t2ZHS8LJ4qEDLWQ==/2543170398297999.jpg'</span>,</span><br><span class="line">            lrc: <span class="string">'/./dist/music/lrc/38689234.lrc'</span>,</span><br><span class="line">	    theme: <span class="string">'#46718b'</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            name: <span class="string">'Just Live More'</span>,</span><br><span class="line">            artist: <span class="string">'湘南乃風'</span>,</span><br><span class="line">            url: <span class="string">'http://rh01.sycdn.kuwo.cn/resource/n2/99/25/305360002.mp3'</span>,</span><br><span class="line">            cover: <span class="string">'http://img1.kuwo.cn/star/starheads/120/82/85/3360615613.jpg'</span>,</span><br><span class="line">	    lrc: <span class="string">'/./dist/music/lrc/湘南乃風-Just Live More.lrc'</span>,</span><br><span class="line">            theme: <span class="string">'#46718b'</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>其中<code>audio</code>标签下，就是我加进去的歌曲，由于我把<code>lrcType: 3</code>注释了，所以lrc歌词文件不会生效。</p>
+
       
 
       
@@ -238,6 +247,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music,hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -288,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/photos/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/13/为博客添加aplayer音乐播放器/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -300,6 +320,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/13/提取音乐外链链接/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">提取音乐外链链接</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -375,7 +405,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
