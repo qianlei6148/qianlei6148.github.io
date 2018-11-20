@@ -211,6 +211,102 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-科学上网" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/10/科学上网/">使用v2ray科学上网所遇到的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/10/科学上网/" class="archive-article-date">
+  	<time datetime="2018-11-10T04:29:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="#title">前言</a><br><a href="#first">第一部分 20Gkvm的vps和10Gkvm的vps</a><br><a href="#second">第二部分 安装v2ray时遇到的问题</a><br><a href="#second-first">首先遇到了一个大问题：系统</a><br><a href="#second-second">其次遇到的问题是：时间</a><br><a href="#second-third">第三个问题是：服务器v2ray配置问题</a><br><a href="#second-fourth">第四个问题是：客户端的config配置问题</a><br><a href="#second-fifth">第五个问题：关于浏览器配置</a></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a><span id="title">前言</span></h3><p><strong>首先我这篇文章是遇到问题的总结，并不是完整的安装教程。</strong><br>想要看完整安装v2ray教程的我推荐两个:<br>&emsp;第一个是<a href="https://toutyrater.github.io/prep/install.html" target="_blank" rel="noopener">官方的文档</a>, 可以了解大致原理和教学安装。<br>&emsp;第二个比第一个更适合我这种菜鸡<a href="https://yuan.ga/v2ray-complete-tutorial/" target="_blank" rel="noopener">V2Ray完全使用教程</a>, 如果只想安装后上网，就看第二个，第二个里面有从购买vps到安装好后, <code>config.json</code>中不同协议的内容都有（当然第一个也有）, 包括图形化的客户端。<br>&emsp;悄悄说一句, 这两个教程其实写的都很罗嗦。哈哈开玩笑的啦。<br>&emsp;其实安装教程网上都有而且不止这两个, 还有很多,而且都是成功的, 看个人吧。<br>&emsp;去年，由于蓝灯总是抽风，其他的软件也因为使用量大总是担心自己花了钱，软件却被封了，那就很难受了，这点你们可以到那些网站上看，有很多哭爹喊娘的，这里就不赘述了。反正我就是觉得服务器不是自己的总是不踏实，于是决定买个vps, 我是在<a href="https://bandwagonhost.com/" target="_blank" rel="noopener">搬瓦工</a>上买的，当时买了$49.9的20Gkvm服务器，但一整年除了用来上网就没用它做别的事，因此决定今年换$19.9的10Gkvm。<br> &emsp;由于知道<code>v2ray</code>这个工具后，一直想试试。但由于平时依赖<code>ss</code>上网，总之就是人懒得动怕装坏了，还得重置<code>ss</code>, 甚感麻烦，所以一直没动，而今年正好快到期了，于是就买了便宜的<code>vps</code>，来装这个工具。在装的过程中遇到了各种麻烦，很头疼，所以记录下来。已备以后查看。</p>
+<h3 id="第一部分-20Gkvm的vps和10Gkvm的vps"><a href="#第一部分-20Gkvm的vps和10Gkvm的vps" class="headerlink" title="第一部分 20Gkvm的vps和10Gkvm的vps"></a><span id="first">第一部分 20Gkvm的vps和10Gkvm的vps</span></h3><p> &emsp;首先我买了便宜的之后，打开后台，顿时就发现不一样了，<br>20Gkvm中，在左边的<code>KiwiVM Extras</code>中有插件选择, 里面自带了<code>ss</code> 和<code>ssr</code>, 也就是说，你无需使用xshell登陆服务器来进行下载安装，只需轻轻一点，即可自动安装完成操作，然后就可以在配置页面中进行配置<img src="C:\Users\Administrator\Downloads\火狐截图_2018-11-10T05-18-29.469Z.png" alt="ss&amp;ssr">非常方便。<br>&emsp;而<code>10Gkvm</code>当我打开后发现<code>Extras</code>中并没有这些，好吧，那就自己配吧，这次我想用v2ray。</p>
+<h3 id="第二部分-安装v2ray时遇到的问题"><a href="#第二部分-安装v2ray时遇到的问题" class="headerlink" title="第二部分 安装v2ray时遇到的问题"></a><span id="second">第二部分 安装v2ray时遇到的问题</span></h3><p>&emsp;我打开了官方推荐的文档，<a href="https://toutyrater.github.io/prep/install.html" target="_blank" rel="noopener">安照上面写的准备一键安装v2ray</a>。</p>
+<h4 id="首先遇到了一个大问题：系统"><a href="#首先遇到了一个大问题：系统" class="headerlink" title="首先遇到了一个大问题：系统"></a><span id="second-first">首先遇到了一个大问题：系统</span></h4><p>在文档中，作者使用脚本安装并且仅推荐脚本安装，而这个脚本是<code>V2Ray</code>官方提供。该脚本仅可以在 <code>Debian</code> 系列或者支持 Systemd 的 Linux 操作系统使用。而且作者还特别声明</p>
+<blockquote>
+<p>除非你是大佬，或者能够自行处理类似 command not found 的问题，否则请你使用 Debian 8.x 以上或者 Ubuntu 16.04 以上的 Linux 系统。 本指南默认使用 Debian 8.7 系统作为示范。</p>
+</blockquote>
+<p>因为这句话让我瞬间决定使用 <code>Debian 8.x</code>,我关闭了服务器，重新<code>install new OS</code>选择了<code>Debian</code>系统, 然后等了一会儿， 然后准备安装文档的命令来进行安装时，系统给我报了个错<code>linux wget: command not found</code>,我傻眼了，而且后面不停的让我傻眼 <code>linux sudo: command not found</code>, 我顿时觉得不对劲，在经历了几个小时的搏斗后，我发现几乎所有的命令都是<code>command not found</code>！这系统刚重装，也没有改过配置，为何会遇到这种情况，于是我决定……换系统!!!<br>我换了<code>Ubuntu 16.04</code>, 然后就是一个词：顺利。我成功的根据文档安装成功。（#@#）！</p>
+<h4 id="其次遇到的问题是：时间"><a href="#其次遇到的问题是：时间" class="headerlink" title="其次遇到的问题是：时间"></a><span id="second-second">其次遇到的问题是：时间</span></h4><p>根据文档中描述</p>
+<blockquote>
+<p>V2Ray 对于时间有比较严格的要求，要求服务器和客户端时间差绝对值不能超过 2 分钟，所以一定要保证时间足够准确。</p>
+</blockquote>
+<p>而在后面安装v2ray中也再次强调了时间准确的重要性。<br>好吧我继续努力中。。。其实这里我犯了一个严重问题，就是不仔细认真的查看文档！！！<br>我错了（@#@）！, 其实文档上面那句话后面还有一段</p>
+<blockquote>
+<p>还好 V2Ray 并不要求时区一致。</p>
+</blockquote>
+<p>？？？？！！！！！我买的vps是西5区，转换成东8区其实就是我电脑本地的时间！！！惊不惊喜意不意外！其实根本不用改！反正我很累，在上面花了我这个菜鸟一两个小时, 差点都不想用了！</p>
+<h4 id="第三个问题是：服务器v2ray配置问题"><a href="#第三个问题是：服务器v2ray配置问题" class="headerlink" title="第三个问题是：服务器v2ray配置问题"></a><span id="second-third">第三个问题是：服务器v2ray配置问题</span></h4><p>其实这是个小问题<br>使用 <a href="https://www.uuidgenerator.net/" target="_blank" rel="noopener">Online UUID Generator</a> 这个网站生成ID，注意服务端的 ID 需要和客户端保持一致。<br>在服务器上, 安装jq, 官方推荐的文档上也讲了,可以用来校验<code>config.json</code>文件内容是否有错误<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Ubuntu下的jq安装</span></span><br><span class="line">apt-get install jq</span><br><span class="line"><span class="comment">//检查正确与否</span></span><br><span class="line">cd /etc/v2ray</span><br><span class="line">jq . config.json</span><br></pre></td></tr></table></figure></p>
+<p> 校验文件是否正确，错误会报错，正确就会打印显示里面的内容。<br>然后就是启动问题<br>启动、停止、重启、看运行状态<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start/stop/restart/status v2ray</span><br></pre></td></tr></table></figure></p>
+<p>其中遇到的问题是，使用<code>vi config.json</code>修改保存后，内容跟自己修改的完全不一样, 于是我使用<code>fileZilla</code>把文件从服务器上down下来, 在本地改好后，重新上传覆盖。</p>
+<h4 id="第四个问题是：客户端的config配置问题"><a href="#第四个问题是：客户端的config配置问题" class="headerlink" title="第四个问题是：客户端的config配置问题"></a><span id="second-fourth">第四个问题是：客户端的config配置问题</span></h4><p>下载了<code>windows 64位(v2ray-window-64.zip)</code>的版本后, 修改配置，启动闪退，当然小问题啦，是因为监听的<code>port:1080</code>被占用了，于是我改成了<code>1081</code>后，启动完美。</p>
+<h4 id="第五个问题：关于浏览器配置"><a href="#第五个问题：关于浏览器配置" class="headerlink" title="第五个问题：关于浏览器配置"></a><span id="second-fifth">第五个问题：关于浏览器配置</span></h4><p>这个是我觉得头疼的地方，因为v2ray不会自动帮你配置，你必须手动改，这些官方推荐的文档中已经有详细的教程了，但是很麻烦！不是吗？我是使用3个浏览器的，也就是说我要配置3个！<br>所以我决定使用那些配置好的图形化工具，我使用的是v2rayN，把下下来的<code>v2rayN.exe</code>复制到<code>v2ray-window-64</code>中，然后配置，使用<code>gcm</code>加密，最后启动。<br>接着我就可以打开任何浏览器进行浏览啦！<br>结束！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tech</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/10/科学上网/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-为博客添加aplayer音乐播放器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -964,11 +1060,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo,Live2D</a>
+                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">music,hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo,Live2D</a>
               </li>
              
               <li class="article-tag-list-item">
