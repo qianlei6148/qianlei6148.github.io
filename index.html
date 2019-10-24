@@ -214,6 +214,98 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-添加gitment评论区" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/24/添加gitment评论区/">hexo添加gitment评论区</a>
+    </h1>
+  
+
+        
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/10/24/添加gitment评论区/" class="archive-article-date">
+  	<time datetime="2019-10-24T06:51:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
+</a>
+
+
+        
+        <!--  -->
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>网上有很多，如果是hexo blog 直接看<a href="https://joeybling.github.io/yilia-plus-demo/2019/07/24/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90Gitment%E8%AF%84%E8%AE%BA/" target="_blank" rel="noopener">hexo集成Gitment</a>这一个就可以了。<br><strong>主要说明的是每+篇新的文章评论区都需要初始化：</strong><br>（这个挺麻烦的）<br>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮，之后其他用户即可在该页面发表评论。<br>&emsp;&emsp;它会在你填写的repo的内部初始化一个issue, 你可以登录github项目的issue中看到记录的评论，所以这个其实就是一个根据Issues来搭建的评论系统。<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">详见 Gitment：使用 GitHub Issues 搭建评论系统</a></p>
+<blockquote>
+<p>接下来下面是我记录下自己的</p>
+</blockquote>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#5、Gitment</span></span><br><span class="line"><span class="attr">gitment_owner:</span>      <span class="comment">#你的 GitHub ID(github用户名)</span></span><br><span class="line"><span class="attr">gitment_repo:</span> <span class="string">'xxxx.github.io'</span>    <span class="comment">#存储评论的 repo(一般是你博客仓库地址)</span></span><br><span class="line"><span class="attr">gitment_oauth:</span>   <span class="comment">#申请的token</span></span><br><span class="line"><span class="attr">  client_id:</span> <span class="string">''</span>           <span class="comment">#client ID</span></span><br><span class="line"><span class="attr">  client_secret:</span> <span class="string">''</span>       <span class="comment">#client secret</span></span><br></pre></td></tr></table></figure>
+<h3 id="gitment汉化："><a href="#gitment汉化：" class="headerlink" title="gitment汉化："></a>gitment汉化：</h3><p>把定义模块中css和js换成下面两行，也可以download下来放模板目录下再换<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://billts.site/extra_css/gitment.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://billts.site/js/gitment.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>来源：<a href="https://github.com/imsun/gitment/issues/104" target="_blank" rel="noopener">https://github.com/imsun/gitment/issues/104</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/24/添加gitment评论区/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo添加看板娘(使用)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -226,10 +318,18 @@
   
 
         
-        <a href="/2019/10/23/hexo添加看板娘(使用)/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/10/23/hexo添加看板娘(使用)/" class="archive-article-date">
   	<time datetime="2019-10-23T09:34:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -305,10 +405,18 @@
   
 
         
-        <a href="/2019/10/19/XAMPP-VM数据库MariaDB使用其他工具连接/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/10/19/XAMPP-VM数据库MariaDB使用其他工具连接/" class="archive-article-date">
   	<time datetime="2019-10-19T07:21:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-19</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -394,10 +502,18 @@
   
 
         
-        <a href="/2019/10/01/python3-django-Heroku-命令/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/10/01/python3-django-Heroku-命令/" class="archive-article-date">
   	<time datetime="2019-10-01T09:19:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -487,10 +603,18 @@
   
 
         
-        <a href="/2019/09/20/背英文/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/09/20/背英文/" class="archive-article-date">
   	<time datetime="2019-09-20T12:41:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -550,10 +674,18 @@
   
 
         
-        <a href="/2019/09/20/Python3建立虚拟环境/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/09/20/Python3建立虚拟环境/" class="archive-article-date">
   	<time datetime="2019-09-19T23:10:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -644,10 +776,18 @@
   
 
         
-        <a href="/2019/09/12/v2ray遇到了问题/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/09/12/v2ray遇到了问题/" class="archive-article-date">
   	<time datetime="2019-09-12T05:56:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -718,10 +858,18 @@
   
 
         
-        <a href="/2019/06/11/安装cordova和ionic/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2019/06/11/安装cordova和ionic/" class="archive-article-date">
   	<time datetime="2019-06-11T13:47:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-11</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -811,10 +959,18 @@
   
 
         
-        <a href="/2018/11/10/科学上网/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2018/11/10/科学上网/" class="archive-article-date">
   	<time datetime="2018-11-10T04:29:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-10</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -896,10 +1052,18 @@
   
 
         
-        <a href="/2018/10/13/为博客添加aplayer音乐播放器/" class="archive-article-date">
+        
+<span id="busuanzi_container_page_pv" style='display:block' class="archive-article-date">
+		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<a href="/2018/10/13/为博客添加aplayer音乐播放器/" class="archive-article-date">
   	<time datetime="2018-10-13T05:34:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
 </a>
+
+
         
+        <!--  -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -958,83 +1122,6 @@
 
 
   
-    <article id="post-提取音乐外链链接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/13/提取音乐外链链接/">提取音乐外链链接</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/13/提取音乐外链链接/" class="archive-article-date">
-  	<time datetime="2018-10-13T02:52:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在自己博客放了aplayer音乐播放器，需要自己音乐链接。<br>首先就要获取音乐网站的音乐外链啦~~~</p>
-<blockquote>
-<p>网易云音乐<br>酷我音乐</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/13/提取音乐外链链接/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1048,8 +1135,9 @@
       <footer id="footer">
   <div class="outer">
     <div id="footer-info">
-		<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    	<div class="footer-left">
+		<!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+		<script async src="/busuanzi.pure.js"></script>
+		<div class="footer-left">
     		&copy; 2019 Rayqian
     	</div>
       	<div class="footer-right">
@@ -1133,11 +1221,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Django</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Python3</a>
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1149,19 +1237,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hexo,Live2D</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Live2D</a>
+                <a href="javascript:void(0)" class="js-tag color1">music,hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">question</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Django</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Python3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1169,7 +1261,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">question</a>
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1185,11 +1277,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">music,hexo</a>
+                <a href="javascript:void(0)" class="js-tag color2">Live2D</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">music</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">

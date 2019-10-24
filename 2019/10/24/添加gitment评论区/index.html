@@ -7,20 +7,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>v2ray遇到了问题,突然连不上了 | Wa!RayQ&#39;s house</title>
+  <title>hexo添加gitment评论区 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;emsp;&amp;emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.">
-<meta name="keywords" content="question">
+  <meta name="description" content="网上有很多，如果是hexo blog 直接看hexo集成Gitment这一个就可以了。主要说明的是每+篇新的文章评论区都需要初始化：（这个挺麻烦的）页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮，之后其他用户即可在该页面发表评论。&amp;emsp;&amp;emsp;它会在你填写的repo的内部初始化一个issue, 你可以登">
+<meta name="keywords" content="hexo,git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="v2ray遇到了问题,突然连不上了">
-<meta property="og:url" content="http://yoursite.com/2019/09/12/v2ray遇到了问题/index.html">
+<meta property="og:title" content="hexo添加gitment评论区">
+<meta property="og:url" content="http://yoursite.com/2019/10/24/添加gitment评论区/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.">
+<meta property="og:description" content="网上有很多，如果是hexo blog 直接看hexo集成Gitment这一个就可以了。主要说明的是每+篇新的文章评论区都需要初始化：（这个挺麻烦的）页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮，之后其他用户即可在该页面发表评论。&amp;emsp;&amp;emsp;它会在你填写的repo的内部初始化一个issue, 你可以登">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-10-23T06:30:36.978Z">
+<meta property="og:updated_time" content="2019-10-24T07:22:14.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="v2ray遇到了问题,突然连不上了">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.">
+<meta name="twitter:title" content="hexo添加gitment评论区">
+<meta name="twitter:description" content="网上有很多，如果是hexo blog 直接看hexo集成Gitment这一个就可以了。主要说明的是每+篇新的文章评论区都需要初始化：（这个挺麻烦的）页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮，之后其他用户即可在该页面发表评论。&amp;emsp;&amp;emsp;它会在你填写的repo的内部初始化一个issue, 你可以登">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
   
@@ -217,14 +217,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-v2ray遇到了问题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-添加gitment评论区" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      v2ray遇到了问题,突然连不上了
+      hexo添加gitment评论区
     </h1>
   
 
@@ -234,8 +234,8 @@
 		<i class="icon-smile icon"></i> 本文阅读量：<span id="busuanzi_value_page_pv"></span>次
 </span>
 
-<a href="/2019/09/12/v2ray遇到了问题/" class="archive-article-date">
-  	<time datetime="2019-09-12T05:56:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
+<a href="/2019/10/24/添加gitment评论区/" class="archive-article-date">
+  	<time datetime="2019-10-24T06:51:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
 </a>
 
 
@@ -245,7 +245,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&emsp;&emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.<br><a id="more"></a><br>&emsp;&emsp;但我接下来发现ping ip没有问题, 同样的ssh也能连接上服务器的后台, 一切依旧, 除了连不上外网.<br>&emsp;&emsp;所以我怀疑端口是否被封, 于是我修改服务器和客户端上的配置文件, 果然又能连外网了, 从<a href="https://tool.lu/portscan" target="_blank" rel="noopener">检查端口网站</a>上看, 端口处于close的状态, 但接着问题又来了, 我把443端口换成未关闭的444, 重启v2ray后, 发现444被关闭了,443端口居然打开了(open), 很奇怪.<br>&emsp;&emsp;<strong>结果</strong>：在测了一段时间后，我觉得重新连接可能性不大，改哪儿哪儿关闭。<br>&emsp;&emsp;于是我重新设置了新的端口，我设置了多个端口，shadowsocks端口设置为444和20001，vmess端口设置了10087，最后在本地电脑修改配置后，这三个端口不管哪个都可以连上网了。</p>
+        <p>网上有很多，如果是hexo blog 直接看<a href="https://joeybling.github.io/yilia-plus-demo/2019/07/24/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90Gitment%E8%AF%84%E8%AE%BA/" target="_blank" rel="noopener">hexo集成Gitment</a>这一个就可以了。<br><strong>主要说明的是每+篇新的文章评论区都需要初始化：</strong><br>（这个挺麻烦的）<br>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮，之后其他用户即可在该页面发表评论。<br>&emsp;&emsp;它会在你填写的repo的内部初始化一个issue, 你可以登录github项目的issue中看到记录的评论，所以这个其实就是一个根据Issues来搭建的评论系统。<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">详见 Gitment：使用 GitHub Issues 搭建评论系统</a></p>
+<blockquote>
+<p>接下来下面是我记录下自己的</p>
+</blockquote>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#5、Gitment</span></span><br><span class="line"><span class="attr">gitment_owner:</span>      <span class="comment">#你的 GitHub ID(github用户名)</span></span><br><span class="line"><span class="attr">gitment_repo:</span> <span class="string">'xxxx.github.io'</span>    <span class="comment">#存储评论的 repo(一般是你博客仓库地址)</span></span><br><span class="line"><span class="attr">gitment_oauth:</span>   <span class="comment">#申请的token</span></span><br><span class="line"><span class="attr">  client_id:</span> <span class="string">''</span>           <span class="comment">#client ID</span></span><br><span class="line"><span class="attr">  client_secret:</span> <span class="string">''</span>       <span class="comment">#client secret</span></span><br></pre></td></tr></table></figure>
+<h3 id="gitment汉化："><a href="#gitment汉化：" class="headerlink" title="gitment汉化："></a>gitment汉化：</h3><p>把定义模块中css和js换成下面两行，也可以download下来放模板目录下再换<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://billts.site/extra_css/gitment.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://billts.site/js/gitment.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>来源：<a href="https://github.com/imsun/gitment/issues/104" target="_blank" rel="noopener">https://github.com/imsun/gitment/issues/104</a></p>
 
       
 
@@ -259,7 +265,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">question</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -315,7 +325,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/12/v2ray遇到了问题/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/24/添加gitment评论区/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -329,18 +339,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/20/Python3建立虚拟环境/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python3建立虚拟环境
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/06/11/安装cordova和ionic/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">安装cordova和ionic</div>
+    <a href="/2019/10/23/hexo添加看板娘(使用)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo添加看板娘(使用官方文档方式)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -386,8 +387,8 @@
 
 <script>
 var gitment = new Gitment({
-  // id: "http://yoursite.com/2019/09/12/v2ray遇到了问题/",
-  id: "20190912135626",
+  // id: "http://yoursite.com/2019/10/24/添加gitment评论区/",
+  id: "20191024145124",
   owner: 'qianlei6148',
   repo: 'qianlei6148.github.io',
   oauth: {
