@@ -39,19 +39,19 @@
 <li><code>this.page.url</code>: <a href="#user-content-site">site</a> + <a href="#user-content-url">url</a></li>
 </ul>
 <p>关于 Disqus 原生评论框配置的说明，可以看此页面：<a href="https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables">https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables</a></p>
-<h3 id="引入-CSS"><a href="#引入-CSS" class="headerlink" title="引入 CSS"></a>引入 CSS</h3><pre><code class="html"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"path/to/iDisqus.min.css"</span> /&gt;</span>
+<h3 id="引入-CSS"><a href="#引入-CSS" class="headerlink" title="引入 CSS"></a>引入 CSS</h3><pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/iDisqus.min.css&quot; /&gt;
 </code></pre>
-<h3 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h3><pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"comment"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<h3 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h3><pre><code class="html">&lt;div id=&quot;comment&quot;&gt;&lt;/div&gt;
 </code></pre>
-<h3 id="引入-JS"><a href="#引入-JS" class="headerlink" title="引入 JS"></a>引入 JS</h3><pre><code class="html"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"path/to/iDisqus.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+<h3 id="引入-JS"><a href="#引入-JS" class="headerlink" title="引入 JS"></a>引入 JS</h3><pre><code class="html">&lt;script src=&quot;path/to/iDisqus.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
-<h3 id="创建实例"><a href="#创建实例" class="headerlink" title="创建实例"></a>创建实例</h3><pre><code class="javascript"><span class="keyword">var</span> disq = <span class="keyword">new</span> iDisqus(<span class="string">'comment'</span>, {
-    forum: <span class="string">'ifool'</span>,
-    api: <span class="string">'http://api.fooleap.org/disqus'</span>,
-    site: <span class="string">'http://blog.fooleap.org'</span>,
-    mode: <span class="number">1</span>,
-    timeout: <span class="number">3000</span>,
-    init: <span class="literal">true</span>
+<h3 id="创建实例"><a href="#创建实例" class="headerlink" title="创建实例"></a>创建实例</h3><pre><code class="javascript">var disq = new iDisqus(&#39;comment&#39;, {
+    forum: &#39;ifool&#39;,
+    api: &#39;http://api.fooleap.org/disqus&#39;,
+    site: &#39;http://blog.fooleap.org&#39;,
+    mode: 1,
+    timeout: 3000,
+    init: true
 });
 </code></pre>
 <h3 id="配置参数"><a href="#配置参数" class="headerlink" title="配置参数"></a>配置参数</h3><h4 id="ID"><a href="#ID" class="headerlink" title="ID"></a>ID</h4><ul>

@@ -10,17 +10,18 @@
   <title>hexo模版yilia头像增加旋转效果 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在themes\yilia\source\文件夹下增加一个css文件avatarrotation.css用来旋转360度内容如下：">
-<meta name="keywords" content="hexo,yilia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo模版yilia头像增加旋转效果">
-<meta property="og:url" content="http://yoursite.com/2018/10/01/hexo模版yilia头像增加旋转效果/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/10/01/hexo%E6%A8%A1%E7%89%88yilia%E5%A4%B4%E5%83%8F%E5%A2%9E%E5%8A%A0%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
 <meta property="og:description" content="在themes\yilia\source\文件夹下增加一个css文件avatarrotation.css用来旋转360度内容如下：">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-13T06:07:03.123Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2018-09-30T23:57:23.000Z">
+<meta property="article:modified_time" content="2018-10-13T06:07:03.123Z">
+<meta property="article:author" content="Rayqian">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="yilia">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo模版yilia头像增加旋转效果">
-<meta name="twitter:description" content="在themes\yilia\source\文件夹下增加一个css文件avatarrotation.css用来旋转360度内容如下：">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
   
@@ -87,7 +88,7 @@
 		});
   </script> -->
   <!-- add pet end-->
-</head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
@@ -115,7 +116,7 @@
 			<img src="/assets/blogImg/avatar1.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Rayqian</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
 		
 
@@ -124,9 +125,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/">分类</a></li>
+				<li><a href="/categories/android/">android</a></li>
 	        
-				<li><a href="/photos/">相册</a></li>
+				<li><a href="/categories/python/">python</a></li>
 	        
 			</ul>
 		</nav>
@@ -169,7 +170,7 @@
 				<img src="/assets/blogImg/avatar1.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Rayqian</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -200,9 +201,9 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/">分类</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/android/">android</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/photos/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/python/">python</a></li>
 		        
 				</ul>
 			</nav>
@@ -237,7 +238,7 @@
 </span>
 
 
-<a href="/2018/10/01/hexo模版yilia头像增加旋转效果/" class="archive-article-date">
+<a href="/2018/10/01/hexo%E6%A8%A1%E7%89%88yilia%E5%A4%B4%E5%83%8F%E5%A2%9E%E5%8A%A0%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/" class="archive-article-date">
   	<time datetime="2018-09-30T23:57:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-01</time>
 </a>
 
@@ -249,10 +250,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在<code>themes\yilia\source\</code>文件夹下<br>增加一个css文件<code>avatarrotation.css</code>用来旋转360度<br>内容如下：</p>
-<a id="more"></a>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">  <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(360deg);</span><br><span class="line">  <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(360deg);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(360deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>然后在<code>themes\yilia\layout\_partial\head.ejs</code>文件中添加进去创建的<code>css</code>文件：<br>找到<code>&lt;%- partial(&#39;css&#39;) %&gt;</code>，在它的下面添加代码，把刚才写的文件添加进去，<strong>注意！！是在它的下面添加，不然旋转速度将不会生效</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">theme.avatarrotation</span>)&#123; %&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"/./avatarrotation.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>如果<code>css</code>不生效，查看<code>css</code>中的<code>href</code>位置是否写错了，可根据你具体存放的位置写路径。<br>最后在<code>主题文件_config.yml</code>中添加<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#头像是否旋转(如果不要旋转取false)</span><br><span class="line">avatarrotation: true</span><br></pre></td></tr></table></figure></p>
+<span id="more"></span>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">  -webkit-<span class="attribute">transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  -moz-<span class="attribute">transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">  -webkit-<span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  -moz-<span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后在<code>themes\yilia\layout\_partial\head.ejs</code>文件中添加进去创建的<code>css</code>文件：<br>找到<code>&lt;%- partial(&#39;css&#39;) %&gt;</code>，在它的下面添加代码，把刚才写的文件添加进去，<strong>注意！！是在它的下面添加，不然旋转速度将不会生效</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.avatarrotation)&#123; %&gt;</span><br><span class="line">	<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/./avatarrotation.css&quot;</span>&gt;</span></span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<p>如果<code>css</code>不生效，查看<code>css</code>中的<code>href</code>位置是否写错了，可根据你具体存放的位置写路径。<br>最后在<code>主题文件_config.yml</code>中添加</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#头像是否旋转(如果不要旋转取false)</span><br><span class="line">avatarrotation: true</span><br></pre></td></tr></table></figure>
 <p>最终就可以旋转了！</p>
 
       
@@ -327,7 +330,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/01/hexo模版yilia头像增加旋转效果/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/01/hexo%E6%A8%A1%E7%89%88yilia%E5%A4%B4%E5%83%8F%E5%A2%9E%E5%8A%A0%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -341,7 +344,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/10/11/hexo模版yilia添加可爱的看板娘/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/10/11/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E5%8F%AF%E7%88%B1%E7%9A%84%E7%9C%8B%E6%9D%BF%E5%A8%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -351,7 +354,7 @@
     </a>
   
   
-    <a href="/2018/09/30/hexo模版yilia左侧添加背景/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/09/30/hexo%E6%A8%A1%E7%89%88yilia%E5%B7%A6%E4%BE%A7%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">hexo模版yilia左侧添加背景</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -398,7 +401,7 @@
 
 <script>
 var gitment = new Gitment({
-  // id: "http://yoursite.com/2018/10/01/hexo模版yilia头像增加旋转效果/",
+  // id: "http://yoursite.com/2018/10/01/hexo%E6%A8%A1%E7%89%88yilia%E5%A4%B4%E5%83%8F%E5%A2%9E%E5%8A%A0%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/",
   id: "20181001075723",
   owner: 'qianlei6148',
   repo: 'qianlei6148.github.io',
@@ -547,27 +550,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">question</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">bug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">music,hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">question</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -580,6 +571,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">cordova</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
             
             <div class="clearfix"></div>

@@ -9,18 +9,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>hexo不蒜子统计显示失效 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题：  总是无法显示统计的数据，在浏览器的后台查看，发现&amp;lt;span&amp;gt;标签下面多了个样式style=&amp;quot;display:none&amp;quot;, 因此我所有显示的统计都被隐藏了。  过程：">
-<meta name="keywords" content="hexo,bug">
+  <meta name="description" content="问题：  总是无法显示统计的数据，在浏览器的后台查看，发现&lt;span&gt;标签下面多了个样式style&#x3D;&quot;display:none&quot;, 因此我所有显示的统计都被隐藏了。  过程：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo不蒜子统计显示失效">
-<meta property="og:url" content="http://yoursite.com/2019/10/24/不算子统计/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="问题：  总是无法显示统计的数据，在浏览器的后台查看，发现&amp;lt;span&amp;gt;标签下面多了个样式style=&amp;quot;display:none&amp;quot;, 因此我所有显示的统计都被隐藏了。  过程：">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-10-27T01:26:37.799Z">
+<meta property="og:description" content="问题：  总是无法显示统计的数据，在浏览器的后台查看，发现&lt;span&gt;标签下面多了个样式style&#x3D;&quot;display:none&quot;, 因此我所有显示的统计都被隐藏了。  过程：">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-10-24T08:57:54.000Z">
+<meta property="article:modified_time" content="2019-10-27T01:26:37.799Z">
+<meta property="article:author" content="Rayqian">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="bug">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo不蒜子统计显示失效">
-<meta name="twitter:description" content="问题：  总是无法显示统计的数据，在浏览器的后台查看，发现&amp;lt;span&amp;gt;标签下面多了个样式style=&amp;quot;display:none&amp;quot;, 因此我所有显示的统计都被隐藏了。  过程：">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
   
@@ -87,7 +88,7 @@
 		});
   </script> -->
   <!-- add pet end-->
-</head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
@@ -115,7 +116,7 @@
 			<img src="/assets/blogImg/avatar1.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Rayqian</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
 		
 
@@ -124,9 +125,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/">分类</a></li>
+				<li><a href="/categories/android/">android</a></li>
 	        
-				<li><a href="/photos/">相册</a></li>
+				<li><a href="/categories/python/">python</a></li>
 	        
 			</ul>
 		</nav>
@@ -169,7 +170,7 @@
 				<img src="/assets/blogImg/avatar1.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Rayqian</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -200,9 +201,9 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/">分类</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/android/">android</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/photos/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/python/">python</a></li>
 		        
 				</ul>
 			</nav>
@@ -237,7 +238,7 @@
 </span>
 
 
-<a href="/2019/10/24/不算子统计/" class="archive-article-date">
+<a href="/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/" class="archive-article-date">
   	<time datetime="2019-10-24T08:57:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
 </a>
 
@@ -255,8 +256,8 @@
 <blockquote>
 <p>过程：</p>
 </blockquote>
-<a id="more"></a>
-<p>于是我首先看了代码，发现我并没有加，于是我添加了样式<code>display:block</code>, 然而页面刷新后，居然自动被改成了<code>display:none</code>。也就是说无法改.<br>于是百度了下，花了些时间，终于看到解决的方法 （当然每个人可能遇到的情况不一样，解决方案不一定全部适用这种情况）<a href="https://www.jianshu.com/p/0befb34dce16" target="_blank" rel="noopener">《yilia不蒜子统计显示失效》</a></p>
+<span id="more"></span>
+<p>于是我首先看了代码，发现我并没有加，于是我添加了样式<code>display:block</code>, 然而页面刷新后，居然自动被改成了<code>display:none</code>。也就是说无法改.<br>于是百度了下，花了些时间，终于看到解决的方法 （当然每个人可能遇到的情况不一样，解决方案不一定全部适用这种情况）<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0befb34dce16">《yilia不蒜子统计显示失效》</a></p>
 <blockquote>
 <p>解决：</p>
 </blockquote>
@@ -334,7 +335,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/24/不算子统计/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -348,7 +349,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/24/hexo模版yilia添加访问量/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/24/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -358,7 +359,7 @@
     </a>
   
   
-    <a href="/2019/10/24/添加gitment评论区/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/10/24/%E6%B7%BB%E5%8A%A0gitment%E8%AF%84%E8%AE%BA%E5%8C%BA/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">hexo添加gitment评论区(+评论区汉化)</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -405,7 +406,7 @@
 
 <script>
 var gitment = new Gitment({
-  // id: "http://yoursite.com/2019/10/24/不算子统计/",
+  // id: "http://yoursite.com/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/",
   id: "20191024165754",
   owner: 'qianlei6148',
   repo: 'qianlei6148.github.io',
@@ -554,27 +555,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">question</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">bug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">music,hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">question</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -587,6 +576,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">cordova</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
             
             <div class="clearfix"></div>

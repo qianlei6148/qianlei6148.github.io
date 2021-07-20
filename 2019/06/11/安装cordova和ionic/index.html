@@ -9,18 +9,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>安装cordova和ionic | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装cordova和ionic1npm install -g cordova ionic@3.16.0">
-<meta name="keywords" content="phone,ionic,cordova">
+  <meta name="description" content="安装cordova和ionic 1npm install -g cordova ionic@3.16.0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安装cordova和ionic">
-<meta property="og:url" content="http://yoursite.com/2019/06/11/安装cordova和ionic/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="安装cordova和ionic1npm install -g cordova ionic@3.16.0">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-19T01:33:53.503Z">
+<meta property="og:description" content="安装cordova和ionic 1npm install -g cordova ionic@3.16.0">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-06-11T13:47:45.000Z">
+<meta property="article:modified_time" content="2019-11-19T01:33:53.503Z">
+<meta property="article:author" content="Rayqian">
+<meta property="article:tag" content="phone">
+<meta property="article:tag" content="ionic">
+<meta property="article:tag" content="cordova">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安装cordova和ionic">
-<meta name="twitter:description" content="安装cordova和ionic1npm install -g cordova ionic@3.16.0">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
   
@@ -87,7 +89,7 @@
 		});
   </script> -->
   <!-- add pet end-->
-</head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
@@ -115,7 +117,7 @@
 			<img src="/assets/blogImg/avatar1.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Rayqian</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
 		
 
@@ -124,9 +126,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/">分类</a></li>
+				<li><a href="/categories/android/">android</a></li>
 	        
-				<li><a href="/photos/">相册</a></li>
+				<li><a href="/categories/python/">python</a></li>
 	        
 			</ul>
 		</nav>
@@ -169,7 +171,7 @@
 				<img src="/assets/blogImg/avatar1.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Rayqian</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -200,9 +202,9 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/">分类</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/android/">android</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/photos/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/python/">python</a></li>
 		        
 				</ul>
 			</nav>
@@ -237,7 +239,7 @@
 </span>
 
 
-<a href="/2019/06/11/安装cordova和ionic/" class="archive-article-date">
+<a href="/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/" class="archive-article-date">
   	<time datetime="2019-06-11T13:47:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-11</time>
 </a>
 
@@ -248,10 +250,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://blog.csdn.net/baymaxlily/article/details/52948777" target="_blank" rel="noopener">安装<code>cordova</code>和<code>ionic</code></a><br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cordova ionic@<span class="number">3</span>.<span class="number">16</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure></p>
- <a id="more"></a>
-<p>然后发现, <code>cordova -v</code> 和 <code>ionic -v</code>都显示不是内部指令, 原因在于没有<code>nodejs</code>配置错误, 对环境配置需要进行进一步操作.<br><a href="https://www.cnblogs.com/zhouyu2017/p/6485265.html" target="_blank" rel="noopener">Node.js安装及环境配置之Windows篇</a>中有第五步有叙述</p>
-<p>使用<code>vscode</code>编程<br>ionic基本操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ionic start myApp tabs --type ionic1  	创建带tab页的ionic1项目</span><br><span class="line">ionic serve                                                          运行项目</span><br><span class="line">ionic cordova platform add android     	 添加Android平台</span><br><span class="line">ionic cordova build android                          打debug包</span><br><span class="line">ionic cordova build --release android         打release包</span><br><span class="line">ionic cordova plugin add 插件名                   添加ngCordova插件</span><br></pre></td></tr></table></figure></p>
+        <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/baymaxlily/article/details/52948777">安装<code>cordova</code>和<code>ionic</code></a></p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cordova ionic@<span class="number">3</span>.<span class="number">16</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
+ <span id="more"></span>
+<p>然后发现, <code>cordova -v</code> 和 <code>ionic -v</code>都显示不是内部指令, 原因在于没有<code>nodejs</code>配置错误, 对环境配置需要进行进一步操作.<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhouyu2017/p/6485265.html">Node.js安装及环境配置之Windows篇</a>中有第五步有叙述</p>
+<p>使用<code>vscode</code>编程<br>ionic基本操作</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ionic start myApp tabs --type ionic1  	创建带tab页的ionic1项目</span><br><span class="line">ionic serve                                                          运行项目</span><br><span class="line">ionic cordova platform add android     	 添加Android平台</span><br><span class="line">ionic cordova build android                          打debug包</span><br><span class="line">ionic cordova build --release android         打release包</span><br><span class="line">ionic cordova plugin add 插件名                   添加ngCordova插件</span><br></pre></td></tr></table></figure>
 <p>mac电脑需要在前面加命令前面加sudo，因为权限问题。</p>
 
       
@@ -341,7 +345,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/06/11/安装cordova和ionic/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -355,7 +359,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/12/v2ray遇到了问题/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/12/v2ray%E9%81%87%E5%88%B0%E4%BA%86%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -365,7 +369,7 @@
     </a>
   
   
-    <a href="/2018/11/10/科学上网/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/10/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">使用v2ray科学上网所遇到的问题</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -412,7 +416,7 @@
 
 <script>
 var gitment = new Gitment({
-  // id: "http://yoursite.com/2019/06/11/安装cordova和ionic/",
+  // id: "http://yoursite.com/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/",
   id: "20190611214745",
   owner: 'qianlei6148',
   repo: 'qianlei6148.github.io',
@@ -561,27 +565,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">question</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">bug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">music,hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">question</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">music</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -594,6 +586,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">cordova</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">tech</a>
               </li>
             
             <div class="clearfix"></div>
