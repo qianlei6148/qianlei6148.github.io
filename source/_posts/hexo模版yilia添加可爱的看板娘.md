@@ -1,7 +1,7 @@
 ---
 title: hexo模版yilia添加可爱的看板娘
 date: 2018-10-11 22:04:05
-categories: [tool]
+categories: [blog]
 tags:
 - [hexo,Live2D]
 - yilia

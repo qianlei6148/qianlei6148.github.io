@@ -1,7 +1,7 @@
 ---
 title: hexo相关
 date: 2018-09-29 13:05:30
-categories: [technology]
+categories: [technology,blog]
 tags: [hexo]
 ---
 # hexo相关（文件夹对应意义等）

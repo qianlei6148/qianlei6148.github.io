@@ -1,7 +1,7 @@
 ---
 title: hexo模版yilia左侧添加背景
 date: 2018-09-30 09:36:05
-categories: [technology]
+categories: [blog]
 tags: 
 - hexo 
 - yilia

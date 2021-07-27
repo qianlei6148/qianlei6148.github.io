@@ -1,7 +1,7 @@
 ---
 title: hexo模版yilia添加不蒜子统计
 date: 2019-10-24 17:08:10
-categories: [technology]
+categories: [blog]
 tags:
 - hexo
 - yilia

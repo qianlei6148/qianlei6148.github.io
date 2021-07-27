@@ -1,7 +1,7 @@
 ---
 title: java jdk8 后台调用打印机来打印pdf文件
 date: 2021-07-26 13:35:24
-categories: [tech]
+categories: [technology]
 tags: [java]
 ---
 网上搜了很多，基本上用到的类都差不多，但把代码拷过来却发现或多或少都有问题，甚至明明就打印一页pdf，打印机却打出了3张而且内容也全是乱码。

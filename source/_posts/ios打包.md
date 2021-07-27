@@ -10,7 +10,7 @@ tags: [ios]
 然后
 打开`platform`文件夹中的 `xxxxxx.xcworkspace`
 >（xcode第一次打包所需要配置的选项）：
-
+<!--more-->
 ![c](屏幕快照 2019-10-28 上午11.14.22.png)
 ![s](屏幕快照 2019-10-28 上午11.11.59.png)
 ![d](屏幕快照 2019-10-28 上午11.15.43.png)
@@ -33,7 +33,7 @@ tags: [ios]
 
 .plist文件是属性列表文件，这里配置更新状态。
 标注：
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
