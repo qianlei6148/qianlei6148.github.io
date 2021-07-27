@@ -7,19 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>为hexo博客yilia模版添加aplayer音乐播放器 | Wa!RayQ&#39;s house</title>
+  <title>Git报错 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="属性参数可以自己查看官方文档。">
+  <meta name="description" content="OpenSSL SSL_read: Connection was reset, errno 10054当时是准备使用如下命令时报的错： 12#git强制覆盖本地命令（单条执行）：$ git fetch --all &amp;&amp; git reset --hard origin&#x2F;master &amp;&amp; git pull 原因：服务器的SSL证书没有经过第三方机构的签署，所以报错。当">
 <meta property="og:type" content="article">
-<meta property="og:title" content="为hexo博客yilia模版添加aplayer音乐播放器">
-<meta property="og:url" content="http://yoursite.com/2018/10/13/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/index.html">
+<meta property="og:title" content="Git报错">
+<meta property="og:url" content="http://yoursite.com/2018/10/13/Git%E6%8A%A5%E9%94%99/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="属性参数可以自己查看官方文档。">
+<meta property="og:description" content="OpenSSL SSL_read: Connection was reset, errno 10054当时是准备使用如下命令时报的错： 12#git强制覆盖本地命令（单条执行）：$ git fetch --all &amp;&amp; git reset --hard origin&#x2F;master &amp;&amp; git pull 原因：服务器的SSL证书没有经过第三方机构的签署，所以报错。当">
 <meta property="og:locale">
 <meta property="article:published_time" content="2018-10-13T05:34:25.000Z">
-<meta property="article:modified_time" content="2021-07-27T02:26:37.199Z">
+<meta property="article:modified_time" content="2021-07-27T02:26:11.951Z">
 <meta property="article:author" content="Rayqian">
-<meta property="article:tag" content="music,hexo">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
@@ -223,14 +223,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-为博客添加aplayer音乐播放器" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Git报错" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      为hexo博客yilia模版添加aplayer音乐播放器
+      Git报错
     </h1>
   
 
@@ -243,7 +243,7 @@
 </span>
 
 
-<a href="/2018/10/13/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/" class="archive-article-date">
+<a href="/2018/10/13/Git%E6%8A%A5%E9%94%99/" class="archive-article-date">
   	<time datetime="2018-10-13T05:34:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
 </a>
 
@@ -254,13 +254,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>属性参数可以自己查看<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/">官方文档</a>。</p>
-<span id="more"></span>
-<p>先下载<a target="_blank" rel="noopener" href="https://github.com/MoePlayer/APlayer">js和css文件</a>，如果你是hexo，可以<code>npm install aplayer --save</code>，然后把其中<code>dist</code>文件夹放到<code>\themes\yilia\source</code>中<br>在<code>\themes\yilia\layout\layout.ejs</code>的<code>body</code>标签下的任意位置添加下面代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/./dist/APlayer.min.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;aplayer&quot;</span> <span class="attr">style</span>=<span class="string">&quot;z-index: 99999;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/./dist/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/./dist/APlayer.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/./dist/musicPlay.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>其中<code>id</code>为<code>aplayer</code>就是你要把浏览器放置的地方，样式<code>z-index</code>则是为了让播放器显示载最上面一层，而<code>hls.min.js</code>文件则可以看<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/">文档</a>。<br>然后再<code>\themes\yilia\source\dist</code>建立一个<code>js</code>文件，名字任意，我建的是<code>musicPlay.js</code>，在其中写下如下代码<br><strong>注意 <code>container</code>对应<code>id</code>为<code>aplayer</code>，别改了上面忘了下面。</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ap = <span class="keyword">new</span> APlayer(&#123;</span><br><span class="line">    <span class="attr">container</span>: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;aplayer&#x27;</span>),</span><br><span class="line">    <span class="comment">// mini: false,</span></span><br><span class="line">    <span class="attr">fixed</span>: <span class="literal">true</span>,<span class="comment">//吸底模式</span></span><br><span class="line">    <span class="attr">autoplay</span>: <span class="literal">false</span>,<span class="comment">//默认是否自动播放</span></span><br><span class="line">    <span class="attr">theme</span>: <span class="string">&#x27;#FADFA3&#x27;</span>,</span><br><span class="line">    <span class="attr">loop</span>: <span class="string">&#x27;all&#x27;</span>,</span><br><span class="line">    <span class="attr">order</span>: <span class="string">&#x27;random&#x27;</span>,</span><br><span class="line">    <span class="attr">preload</span>: <span class="string">&#x27;auto&#x27;</span>,</span><br><span class="line">    <span class="attr">volume</span>: <span class="number">0.7</span>,<span class="comment">//默认音量</span></span><br><span class="line">    <span class="attr">mutex</span>: <span class="literal">true</span>,<span class="comment">//是否不允许多个播放器同时播放</span></span><br><span class="line">    <span class="attr">listFolded</span>: <span class="literal">true</span>,<span class="comment">//是否默认收起播放列表</span></span><br><span class="line">    <span class="attr">listMaxHeight</span>: <span class="number">90</span>,<span class="comment">//播放列表的高度</span></span><br><span class="line">    <span class="comment">//lrcType: 3, //使用lrc文件提供歌词</span></span><br><span class="line">	<span class="comment">//网易云默认外链链接：http://music.163.com/song/media/outer/url?id=ID数字.mp3</span></span><br><span class="line">    <span class="attr">audio</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;SURPRISE-DRIVE&#x27;</span>,</span><br><span class="line">            <span class="attr">artist</span>: <span class="string">&#x27;松冈充&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=29751409.mp3&#x27;</span>,</span><br><span class="line">            <span class="attr">cover</span>: <span class="string">&#x27;http://p1.music.126.net/Oo0kXusaoF9DGwjAJFeAtA==/6671836558494023.jpg&#x27;</span>,</span><br><span class="line">            <span class="attr">lrc</span>: <span class="string">&#x27;/./dist/music/lrc/29751409.lrc&#x27;</span>,</span><br><span class="line">            <span class="attr">theme</span>: <span class="string">&#x27;#46718b&#x27;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;Be The One&#x27;</span>,</span><br><span class="line">            <span class="attr">artist</span>: <span class="string">&#x27;PANDORA / Beverly&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=530986958.mp3&#x27;</span>,</span><br><span class="line">            <span class="attr">cover</span>: <span class="string">&#x27;http://p1.music.126.net/91YBBcxEO37hoIfm9W5TjA==/109951163116520306.jpg&#x27;</span>,</span><br><span class="line">            <span class="attr">theme</span>: <span class="string">&#x27;#46718b&#x27;</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;我ら思う、故に我ら在り&#x27;</span>,</span><br><span class="line">            <span class="attr">artist</span>: <span class="string">&#x27;氣志團&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=40729281.mp3&#x27;</span>,</span><br><span class="line">            <span class="attr">cover</span>: <span class="string">&#x27;http://p1.music.126.net/5kUo3f5_GyyQNiSvPOIhXA==/18610333813518047.jpg&#x27;</span>,</span><br><span class="line">            <span class="attr">theme</span>: <span class="string">&#x27;#46718b&#x27;</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;Anything Goes! (「仮面ライダーオーズ/000」)&#x27;</span>,</span><br><span class="line">            <span class="attr">artist</span>: <span class="string">&#x27;大黒摩季&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=38689229.mp3&#x27;</span>,</span><br><span class="line">            <span class="attr">cover</span>: <span class="string">&#x27;http://p2.music.126.net/mQxtTZ1t2ZHS8LJ4qEDLWQ==/2543170398297999.jpg&#x27;</span>,</span><br><span class="line">            <span class="attr">lrc</span>: <span class="string">&#x27;/./dist/music/lrc/38689229.lrc&#x27;</span>,</span><br><span class="line">	    <span class="attr">theme</span>: <span class="string">&#x27;#46718b&#x27;</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;Break the Chain (「仮面ライダーキバ」)&#x27;</span>,</span><br><span class="line">            <span class="attr">artist</span>: <span class="string">&#x27;Tourbillon&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://music.163.com/song/media/outer/url?id=38689234.mp3&#x27;</span>,</span><br><span class="line">            <span class="attr">cover</span>: <span class="string">&#x27;http://p2.music.126.net/mQxtTZ1t2ZHS8LJ4qEDLWQ==/2543170398297999.jpg&#x27;</span>,</span><br><span class="line">            <span class="attr">lrc</span>: <span class="string">&#x27;/./dist/music/lrc/38689234.lrc&#x27;</span>,</span><br><span class="line">	    <span class="attr">theme</span>: <span class="string">&#x27;#46718b&#x27;</span></span><br><span class="line">        &#125;,</span><br><span class="line">		&#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;Just Live More&#x27;</span>,</span><br><span class="line">            <span class="attr">artist</span>: <span class="string">&#x27;湘南乃風&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://rh01.sycdn.kuwo.cn/resource/n2/99/25/305360002.mp3&#x27;</span>,</span><br><span class="line">            <span class="attr">cover</span>: <span class="string">&#x27;http://img1.kuwo.cn/star/starheads/120/82/85/3360615613.jpg&#x27;</span>,</span><br><span class="line">	    <span class="attr">lrc</span>: <span class="string">&#x27;/./dist/music/lrc/湘南乃風-Just Live More.lrc&#x27;</span>,</span><br><span class="line">            <span class="attr">theme</span>: <span class="string">&#x27;#46718b&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>其中<code>audio</code>标签下，就是我加进去的歌曲，由于我把<code>lrcType: 3</code>注释了，所以lrc歌词文件不会生效。</p>
+        <h3 id="OpenSSL-SSL-read-Connection-was-reset-errno-10054"><a href="#OpenSSL-SSL-read-Connection-was-reset-errno-10054" class="headerlink" title="OpenSSL SSL_read: Connection was reset, errno 10054"></a>OpenSSL SSL_read: Connection was reset, errno 10054</h3><p>当时是准备使用如下命令时报的错：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#git强制覆盖本地命令（单条执行）：</span></span><br><span class="line">$ git fetch --all &amp;&amp; git reset --hard origin/master &amp;&amp; git pull</span><br></pre></td></tr></table></figure>
+<p>原因：服务器的SSL证书没有经过第三方机构的签署，所以报错。<strong>当然也很有可能是很有可能是网络不稳定，连接超时导致的</strong></p>
+<h2 id="我的解决方式是：-翻墙"><a href="#我的解决方式是：-翻墙" class="headerlink" title="我的解决方式是：**翻墙**"></a>我的解决方式是：**<code>翻墙</code>**</h2><p>网上找到的解决：</p>
+<ul>
+<li>网上面有大部分内容的解决方式是执行如下git命令脚本<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#修改设置，解除ssl验证</span></span><br><span class="line">$ git config --global http.sslVerify <span class="string">&quot;false&quot;</span></span><br></pre></td></tr></table></figure>
+但我使用后没有任何效果，还是报如上错误</li>
+<li>于是我有搜到了一个解决方案：<em><strong>更新DNS缓存</strong></em><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Windows用户：cmd命令窗口执行：</span></span><br><span class="line">$ ipconfig /flushdns</span><br></pre></td></tr></table></figure>
+仍然没有用。。。</li>
+<li>找到第三个，但第三个是因为文件过大，超时了。和我不是一个问题<br>地址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45452172/article/details/114732482?utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control">git push时报错</a></li>
+<li>但以上这些对我都没有<br>最后我觉得既然可能是网络不稳定，连接超时所引起的，那么就直接翻墙更新，然后就可以了。</li>
+</ul>
 
       
 
@@ -274,7 +279,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music,hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -341,7 +346,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/13/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/13/Git%E6%8A%A5%E9%94%99/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -355,18 +360,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/11/10/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/10/13/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          使用v2ray科学上网所遇到的问题
+          为hexo博客yilia模版添加aplayer音乐播放器
         
       </div>
     </a>
   
   
-    <a href="/2018/10/13/Git%E6%8A%A5%E9%94%99/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Git报错</div>
+    <a href="/2018/10/13/%E6%8F%90%E5%8F%96%E9%9F%B3%E4%B9%90%E5%A4%96%E9%93%BE%E9%93%BE%E6%8E%A5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">提取音乐外链链接</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -412,7 +417,7 @@
 
 <script>
 var gitment = new Gitment({
-  // id: "http://yoursite.com/2018/10/13/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/",
+  // id: "http://yoursite.com/2018/10/13/Git%E6%8A%A5%E9%94%99/",
   id: "20181013133425",
   owner: 'qianlei6148',
   repo: 'qianlei6148.github.io',
