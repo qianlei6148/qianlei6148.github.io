@@ -851,7 +851,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
+        			<a href="/categories/blog//" class="article-tag-list-link color5">blog</a>
         		</li>
       		
 		</ul>
@@ -918,17 +918,7 @@
       
         <h3 id="OpenSSL-SSL-read-Connection-was-reset-errno-10054"><a href="#OpenSSL-SSL-read-Connection-was-reset-errno-10054" class="headerlink" title="OpenSSL SSL_read: Connection was reset, errno 10054"></a>OpenSSL SSL_read: Connection was reset, errno 10054</h3><p>当时是准备使用如下命令时报的错：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#git强制覆盖本地命令（单条执行）：</span></span><br><span class="line">$ git fetch --all &amp;&amp; git reset --hard origin/master &amp;&amp; git pull</span><br></pre></td></tr></table></figure>
-<p>原因：服务器的SSL证书没有经过第三方机构的签署，所以报错。<strong>当然也很有可能是很有可能是网络不稳定，连接超时导致的</strong></p>
-<h2 id="我的解决方式是：-翻墙"><a href="#我的解决方式是：-翻墙" class="headerlink" title="我的解决方式是：**翻墙**"></a>我的解决方式是：**<code>翻墙</code>**</h2><p>网上找到的解决：</p>
-<ul>
-<li>网上面有大部分内容的解决方式是执行如下git命令脚本<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#修改设置，解除ssl验证</span></span><br><span class="line">$ git config --global http.sslVerify <span class="string">&quot;false&quot;</span></span><br></pre></td></tr></table></figure>
-但我使用后没有任何效果，还是报如上错误</li>
-<li>于是我有搜到了一个解决方案：<em><strong>更新DNS缓存</strong></em><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Windows用户：cmd命令窗口执行：</span></span><br><span class="line">$ ipconfig /flushdns</span><br></pre></td></tr></table></figure>
-仍然没有用。。。</li>
-<li>找到第三个，但第三个是因为文件过大，超时了。和我不是一个问题<br>地址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45452172/article/details/114732482?utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control">git push时报错</a></li>
-<li>但以上这些对我都没有<br>最后我觉得既然可能是网络不稳定，连接超时所引起的，那么就直接翻墙更新，然后就可以了。</li>
-</ul>
-
+        
       
 
       
@@ -1135,7 +1125,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
+        			<a href="/categories/blog//" class="article-tag-list-link color5">blog</a>
         		</li>
       		
 		</ul>
