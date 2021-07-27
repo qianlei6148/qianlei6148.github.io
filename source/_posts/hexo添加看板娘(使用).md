@@ -1,7 +1,7 @@
 ---
 title: hexo添加看板娘(使用官方文档方式)
 date: 2019-10-23 17:34:36
-categories: [tool]
+categories: [technology]
 tags: [hexo,Live2D]
 ---
 >先在说前头，在我写完这篇文章后，出现了一个报错，无法编译无法启动。

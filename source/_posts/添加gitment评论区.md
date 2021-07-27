@@ -1,7 +1,7 @@
 ---
 title: hexo添加gitment评论区(+评论区汉化)
 date: 2019-10-24 14:51:24
-categories: [tool]
+categories: [technology]
 tags: [hexo,git]
 ---
 网上有很多，如果是hexo blog 直接看[hexo集成Gitment](https://joeybling.github.io/yilia-plus-demo/2019/07/24/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90Gitment%E8%AF%84%E8%AE%BA/)这一个就可以了。

@@ -1,7 +1,7 @@
 ---
 title: hexo模版yilia头像增加旋转效果
 date: 2018-10-01 07:57:23
-categories: [tool]
+categories: [technology]
 tags:
 - hexo
 - yilia
