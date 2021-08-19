@@ -1,7 +1,7 @@
 ---
 title: 为hexo博客yilia模版添加aplayer音乐播放器
 date: 2018-10-13 13:34:25
-categories: [blog]
+categories: [technology,blog]
 tags:
 - [music,hexo]
 ---

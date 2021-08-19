@@ -7,11 +7,11 @@ tags: [java]
 网上搜了很多，基本上用到的类都差不多，但把代码拷过来却发现明明就打印一页pdf，打印机却打出了3张而且内容也全是乱码（**打出乱码问题大概知道了原因：是因为打印机不支持pdf文件打印**）。
 ### 重要：遇到了2个问题：
 >* 1 使用下面的代码遇到了一个问题，在使用`HP laserjet M401d`打印机没有立即不打印，打印机上面显示"将介质装入纸盒1，普通纸 信封C4或按OK使用可用介质"，按了打印机上面的`ok`按钮后才打印，这个问题需要给打印机设置`任何材质打印`。
->* 2 后台代码报错以及打印出来二进制的乱码：`sun.print.PrintJobFlavorException: invalid flavor`，我设置的是`DocFlavor flavor = DocFlavor.INPUT_STREAM.PDF;`根据网上查证，是因为打印机不支持pdf格式，而且在程序里面设置`AUTOSENSE`打印出来就是乱码了，可能是因为这个打印机是用来打印小票的。
+>* 2 后台代码报错以及打印出来二进制的乱码：`sun.print.PrintJobFlavorException: invalid flavor`，我设置的是`DocFlavor flavor = DocFlavor.INPUT_STREAM.PDF;`根据网上查证，是因为打印机不支持pdf格式，而且在程序里面设置`AUTOSENSE`打印出来就是乱码了，可能是因为这个打印机是用来打印小票的。解决方法是把文件转成`JPEG`格式再打印出来。
 <!--more-->
 程序代码是自己从 **[tabnine网站](https://www.tabnine.com/code/java/classes/javax.print.SimpleDoc)** 里面搜索相关代码以及查看网上打印的相关api后试验得到可以使用的如下代码
 下面代码使用main方法执行，文件使用云盘上或者本地文件，设置为A4纸和横向打印
-* 主方法
+#### * 主方法
 ```java
  /**
      * 打印文档具体方法，属性配置
@@ -59,7 +59,7 @@ tags: [java]
         }
     }
 ```
-* 获取文件方法
+#### * 获取文件方法
 ```java
 /**
      * 得到文件
@@ -78,7 +78,7 @@ tags: [java]
         return file;
     }
 ```
-* 文件从云盘上获取
+#### * 文件从云盘上获取
 ```java
 /**
      * 文件根据输入流生成
@@ -107,7 +107,7 @@ tags: [java]
         return file;
     }
 ```
-* 使用打印机打印
+#### * 使用打印机打印
 ```java
 /**
      * 打印文档
@@ -131,7 +131,7 @@ tags: [java]
     }
 ```
 
-* 最后调用main方法来测试
+#### * 最后调用main方法来测试
 ```java
     public static void main(String[] args) {
         try {
