@@ -11,7 +11,6 @@ cd 项目
 npm install 
 npm run lint -- --fix
 npm run dev
-http://gitlab.baocloud.cn/ELIM-GF/elim-bc.git
 
 feature/ELIM-16' into 'hotfix/1.3.1' in 2020-09-07 16:34:22
 ## 遇到问题
