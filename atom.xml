@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-10-14T01:40:23.279Z</updated>
+  <updated>2022-03-03T06:30:31.514Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VSCode 建立多项目工作区</title>
+    <link href="http://yoursite.com/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/"/>
+    <id>http://yoursite.com/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/</id>
+    <published>2022-03-03T02:31:51.000Z</published>
+    <updated>2022-03-03T06:30:31.514Z</updated>
+    
+    <content type="html"><![CDATA[<p>调出命令面板或者<code>文件 —&gt; 将文件夹添加到工作区</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//打开命令面板</span><br><span class="line">command+shift+P</span><br><span class="line">//添加项目文件夹</span><br><span class="line">&gt; add folder to workspace</span><br><span class="line">//保存工作空间</span><br><span class="line">&gt; save workspace as...</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;调出命令面板或者&lt;code&gt;文件 —&amp;gt; 将文件夹添加到工作区&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mac ffmpeg下载配置</title>
+    <link href="http://yoursite.com/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-11-15T05:42:35.000Z</published>
+    <updated>2021-11-15T05:51:12.500Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了把<code>b站</code>的视频<code>flv</code>格式转换成<code>MP4</code>格式，所以下载<code>ffmpeg</code>用来转换<code>MP4</code>格式.<br>正常下载使用 <code>brew</code>，但不知道为什么一直报错无法下载，最后觉得直接<a href="https://ffmpeg.org/download.html">官网下载</a>后，配置使用</p><span id="more"></span><p>下载好后，<code>vi ~/.bash_profile</code>，在文件最后添加上下面的环境变量就可以到处使用了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#ffmpeg</span><br><span class="line">export PATH=$PATH:/Applications/projectForMyself/environment_configuration/ffmpegFloder/bin</span><br></pre></td></tr></table></figure><p>我把下载的<code>ffmpeg</code>，放在了<code>bin</code>文件里面，也就是<code>bin/ffmpeg</code>。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;为了把&lt;code&gt;b站&lt;/code&gt;的视频&lt;code&gt;flv&lt;/code&gt;格式转换成&lt;code&gt;MP4&lt;/code&gt;格式，所以下载&lt;code&gt;ffmpeg&lt;/code&gt;用来转换&lt;code&gt;MP4&lt;/code&gt;格式.&lt;br&gt;正常下载使用 &lt;code&gt;brew&lt;/code&gt;，但不知道为什么一直报错无法下载，最后觉得直接&lt;a href=&quot;https://ffmpeg.org/download.html&quot;&gt;官网下载&lt;/a&gt;后，配置使用&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>mac电脑遇到的svn证书验证失败问题</title>
@@ -451,57 +489,6 @@
     <category term="Heroku" scheme="http://yoursite.com/tags/Heroku/"/>
     
     <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python3建立虚拟环境</title>
-    <link href="http://yoursite.com/2019/09/20/Python3%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
-    <id>http://yoursite.com/2019/09/20/Python3%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</id>
-    <published>2019-09-19T23:10:39.000Z</published>
-    <updated>2019-10-23T06:13:22.387Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先创建一个文件夹，如：books</p><ul><li>先切换到books目录下，使用python3<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> books </span><br><span class="line">$ Python3 -m venv xxx</span><br></pre></td></tr></table></figure><code>xxx</code>表示的是你准备创建的文件名, 如果与当前目录（books）名称相同, 那么接下来安装的文件都会放在同一个目录下<span id="more"></span>建立虚拟环境<br>然后在books目录下激活虚拟环境<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//激活虚拟环境</span><br><span class="line">$ source xxx/bin/activate</span><br></pre></td></tr></table></figure></li></ul><p>//激活好后,在terminal中输入任何指令，下面都会显示<code>(xxx)</code>，<br>例如：输入<code>ls</code>查当前文件夹的内容，回车后会显示在文件下面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ls</span><br><span class="line">(xxx)</span><br></pre></td></tr></table></figure> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//关闭虚拟环境</span><br><span class="line">$deactivate</span><br></pre></td></tr></table></figure><p>也可以输入<code>$python</code>查看是否激活，如果显示的<code>python</code>目录路径是当前文件夹下，则说明激活成功，如果显示的是系统安装的路径，就说明没有激活。</p><h4 id="安装Django"><a href="#安装Django" class="headerlink" title="安装Django"></a>安装Django</h4><p>记住<strong>激活后才能用</strong>，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$pip install Django</span><br><span class="line">Installing collected packages: Django </span><br><span class="line">Successfully installed Django Cleanin</span><br></pre></td></tr></table></figure><p>创建项目：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">django-admin.py startproject books .</span><br></pre></td></tr></table></figure><p><code>books</code>就是当前你所处在的目录名<br><em><strong>记住最后的<code>.</code>是必须要的</strong></em><br>这个命令末尾的点，是让新项目使用合适的目录结构，这样开发完成后可轻松地将应用程序部署到服务器上<br>（如果部署时是应为<code>.</code>而出现配置问题，则需要删除 除了<code>xxx</code>以外的所有文件和文件夹，然后重新运行命令）</p><h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$python manage.py migrate</span><br><span class="line">........</span><br><span class="line">$ls</span><br><span class="line">db.sqlite3 .....</span><br></pre></td></tr></table></figure><h4 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver</span><br></pre></td></tr></table></figure><p>最后在浏览器<code>localhost:8000</code>下查看页面，如要关闭<code>Ctrl+c</code></p><h4 id="创建应用程序"><a href="#创建应用程序" class="headerlink" title="创建应用程序"></a>创建应用程序</h4><p>终端还运行着<code>runserver</code>, 重新打开一个终端（或tab页）,<br>切换到<code>manage.py</code>所在的目录, 激活虚拟环境, 在执行命令<code>startapp</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$source xxx/bin/activate</span><br><span class="line">(xxx)$python manage.py startapp xxxx</span><br><span class="line">(xxx)$ls</span><br><span class="line">xxxx  xxx  manage.py  db.sqlite3 ...</span><br></pre></td></tr></table></figure><p> <code>startapp appname</code>命令是让Django建立应用程序所需的基础设施, 执行<code>ls</code>会发现多了个xxxx文件夹(你可以创建多个应用程序作为不同的模块放在项目中，比如创建个user应用程序，这个模块就专门用来管理用户等信息)</p><h4 id="定义模型"><a href="#定义模型" class="headerlink" title="定义模型"></a>定义模型</h4><p> 首先是激活模型<br> 在<code>settings.py</code>的 <code>INSTALLED_APPS</code>中，添加<code>xxxx</code>应用程序<br>在 <code>models.py</code>创建类，然后完成迁移数据库</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$python manage.py makemigrations xxxx</span><br><span class="line">$python manage.py migrate</span><br></pre></td></tr></table></figure><p><em><strong>记住，每次创建或者修改类都要做一次迁移数据库</strong></em></p><h4 id="Django管理网站"><a href="#Django管理网站" class="headerlink" title="Django管理网站"></a>Django管理网站</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$python manage.py createsuperuser</span><br></pre></td></tr></table></figure><blockquote><p><strong>注册模型</strong></p></blockquote><p>在<code>admin.py</code>中，添加代码,例如：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> xxxx.models <span class="keyword">import</span> xx</span><br><span class="line">admin.site.register(xx)</span><br></pre></td></tr></table></figure><blockquote><p>静态文件更新</p></blockquote><p>添加静态文件需要更新下，以免出现加载404的情况，在<code>setting.py</code>配置中:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#存放静态文件位置，</span></span><br><span class="line">STATICFILES_DIRS = [os.path.join(BASE_DIR, <span class="string">&#x27;static&#x27;</span>), ]</span><br></pre></td></tr></table></figure><p>其中的<code>static</code>是静态目录，是当前项目的目录下的一级目录，如果你创建在别的地方比如二级目录，那就需要修改文件夹路径，比如<code>xxxx/static</code></p><blockquote><p>（比如在<a href="https://baike.baidu.com/item/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5/19943874?fr=aladdin">《python编程：从入门到实践》</a>这本书中的<code>20.2.10 创建用于存储静态文件的目录</code>小节中，<code>static</code>文件夹就创建在<code>learning_log/learning_log/static</code>中），所以需要把<code>static</code>修改成<code>learning_log/static</code>。</p></blockquote><p>如果发现没有用，静态文件页面刷新就404，那有个办法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#在setting.py中添加</span><br><span class="line">STATIC_ROOT = &#x27;staticfiles&#x27;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;首先创建一个文件夹，如：books&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;先切换到books目录下，使用python3&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; books &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ Python3 -m venv xxx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;code&gt;xxx&lt;/code&gt;表示的是你准备创建的文件名, 如果与当前目录（books）名称相同, 那么接下来安装的文件都会放在同一个目录下</summary>
-    
-    
-    
-    <category term="technology" scheme="http://yoursite.com/categories/technology/"/>
-    
-    
-    <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
-    
-    <category term="Python3" scheme="http://yoursite.com/tags/Python3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>v2ray遇到了问题,突然连不上了</title>
-    <link href="http://yoursite.com/2019/09/12/v2ray%E9%81%87%E5%88%B0%E4%BA%86%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2019/09/12/v2ray%E9%81%87%E5%88%B0%E4%BA%86%E9%97%AE%E9%A2%98/</id>
-    <published>2019-09-12T05:56:26.000Z</published>
-    <updated>2021-08-26T01:42:08.673Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="2021-08-26更新"><a href="#2021-08-26更新" class="headerlink" title="2021.08.26更新"></a>2021.08.26更新</h3><p>发现修改好端口后，重启服务器报错<br><img src="https://gitee.com/qianlei6148/pictures-of-the-warehouse/raw/master/uPic/202108/20210826KjovTk.png" alt="报错信息"><br>报错：<code>Job for v2ray.service failed. See &quot;systemctl status v2ray.service&quot; and &quot;journalctl -xe&quot; for details.</code><br>原因是配置文件内容出错了<code>config.json</code>，使用命令检查文件<code>jq . config.json</code>(<code>jq</code>是官方推荐的,可以用来校验<code>config.json</code>文件格式的工具)，显示全部内容说明格式没问题，那么就是里面具体的配置错了，使用<code>vi config.json</code>打开文件后仔细检查，终于发现原来是因为配置的多个端口，其中有两个端口号是一样的，也就是说一个端口被占用了，另一个还想使用这个端口，所以导致无法启动或者重启服务。</p><h5 id="P-S-bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下"><a href="#P-S-bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下" class="headerlink" title="P.S.bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下"></a>P.S.<code>bing</code>搜索中可以看到这个报错基本都是配置文件导致的，例如启动<code>docker</code>、<code>nginx</code>等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下</h5><hr><h3 id="以前"><a href="#以前" class="headerlink" title="以前"></a>以前</h3><p>&emsp;&emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.</p><span id="more"></span><p>&emsp;&emsp;但我接下来发现ping ip没有问题, 同样的ssh也能连接上服务器的后台, 一切依旧, 除了连不上外网.<br>&emsp;&emsp;所以我怀疑端口是否被封, 于是我修改服务器和客户端上的配置文件, 果然又能连外网了, 从<a href="https://tool.lu/portscan">检查端口网站</a>(这个工具无法使用了)上看, 端口处于close的状态, 但接着问题又来了, 我把443端口换成未关闭的444, 重启v2ray后, 发现444被关闭了,443端口居然打开了(open), 很奇怪.<br>&emsp;&emsp;<strong>结果</strong>：在测了一段时间后，我觉得重新连接可能性不大，改哪儿哪儿关闭。<br>&emsp;&emsp;于是我重新设置了新的端口，我设置了多个端口，shadowsocks端口设置为444和20001，vmess端口设置了10087，最后在本地电脑修改配置后，这三个端口不管哪个都可以连上网了。</p>]]></content>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;2021-08-26更新&quot;&gt;&lt;a href=&quot;#2021-08-26更新&quot; class=&quot;headerlink&quot; title=&quot;2021.08.26更新&quot;&gt;&lt;/a&gt;2021.08.26更新&lt;/h3&gt;&lt;p&gt;发现修改好端口后，重启服务器报错&lt;br&gt;&lt;img src=&quot;https://gitee.com/qianlei6148/pictures-of-the-warehouse/raw/master/uPic/202108/20210826KjovTk.png&quot; alt=&quot;报错信息&quot;&gt;&lt;br&gt;报错：&lt;code&gt;Job for v2ray.service failed. See &amp;quot;systemctl status v2ray.service&amp;quot; and &amp;quot;journalctl -xe&amp;quot; for details.&lt;/code&gt;&lt;br&gt;原因是配置文件内容出错了&lt;code&gt;config.json&lt;/code&gt;，使用命令检查文件&lt;code&gt;jq . config.json&lt;/code&gt;(&lt;code&gt;jq&lt;/code&gt;是官方推荐的,可以用来校验&lt;code&gt;config.json&lt;/code&gt;文件格式的工具)，显示全部内容说明格式没问题，那么就是里面具体的配置错了，使用&lt;code&gt;vi config.json&lt;/code&gt;打开文件后仔细检查，终于发现原来是因为配置的多个端口，其中有两个端口号是一样的，也就是说一个端口被占用了，另一个还想使用这个端口，所以导致无法启动或者重启服务。&lt;/p&gt;
-&lt;h5 id=&quot;P-S-bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下&quot;&gt;&lt;a href=&quot;#P-S-bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下&quot; class=&quot;headerlink&quot; title=&quot;P.S.bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下&quot;&gt;&lt;/a&gt;P.S.&lt;code&gt;bing&lt;/code&gt;搜索中可以看到这个报错基本都是配置文件导致的，例如启动&lt;code&gt;docker&lt;/code&gt;、&lt;code&gt;nginx&lt;/code&gt;等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下&lt;/h5&gt;&lt;hr&gt;
-&lt;h3 id=&quot;以前&quot;&gt;&lt;a href=&quot;#以前&quot; class=&quot;headerlink&quot; title=&quot;以前&quot;&gt;&lt;/a&gt;以前&lt;/h3&gt;&lt;p&gt;&amp;emsp;&amp;emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="翻墙" scheme="http://yoursite.com/categories/%E7%BF%BB%E5%A2%99/"/>
-    
-    
-    <category term="question" scheme="http://yoursite.com/tags/question/"/>
-    
-    <category term="v2ray" scheme="http://yoursite.com/tags/v2ray/"/>
     
   </entry>
   
