@@ -1,9 +1,14 @@
 ---
-title: 图片上传工具（uPic 图床 + Gitee）
+title: 图片上传工具（uPic 图床 + 阿里云oss）(Gitee废弃)
 date: 2021-08-18 16:37:41
 categories: tool
-tags: [uPic,gitee]
+tags: [uPic,gitee,阿里云oss]
 ---
+
+# 2022年4月17日  说明：
+<font color="red">目前`gitee`启用了防盗用链，所以无法再作为图床，而`github`在国内有时候不是很顺畅，所以我改用了`阿里云oss`对象存储，来作为图床，一年9元人民币，一个人用我觉得应该还是没问题的，后续遇到问题再说吧。
+</font>
+
 文章主要使用了这个作者写的[uPic 图床配置教程 - 码云(Gitee)
 ](https://blog.svend.cc/upic/tutorials/gitee/)，自己在这里记录主要是为了留个备份。
 
@@ -24,3 +29,7 @@ tags: [uPic,gitee]
 
 ## 问题
 Gitee 私有库里面的图片无法展示，需要改为公开库才行
+
+Gitee目前已经无法作为图床了，因为启用了防盗链，请求的链接头不是gitee的地址就不会获取到你自己的图片。
+
+所以转成用阿里云oss
