@@ -7,20 +7,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>图片上传工具（uPic 图床 + Gitee） | Wa!RayQ&#39;s house</title>
+  <title>图片上传工具（uPic 图床 + 阿里云oss）(Gitee废弃) | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="文章主要使用了这个作者写的uPic 图床配置教程 - 码云(Gitee) ，自己在这里记录主要是为了留个备份。 配置项说明">
+  <meta name="description" content="2022年4月17日  说明：目前gitee启用了防盗用链，所以无法再作为图床，而github在国内有时候不是很顺畅，所以我改用了阿里云oss对象存储，来作为图床，一年9元人民币，一个人用我觉得应该还是没问题的，后续遇到问题再说吧。 文章主要使用了这个作者写的uPic 图床配置教程 - 码云(Gitee) ，自己在这里记录主要是为了留个备份。 配置项说明">
 <meta property="og:type" content="article">
-<meta property="og:title" content="图片上传工具（uPic 图床 + Gitee）">
+<meta property="og:title" content="图片上传工具（uPic 图床 + 阿里云oss）(Gitee废弃)">
 <meta property="og:url" content="http://yoursite.com/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="文章主要使用了这个作者写的uPic 图床配置教程 - 码云(Gitee) ，自己在这里记录主要是为了留个备份。 配置项说明">
+<meta property="og:description" content="2022年4月17日  说明：目前gitee启用了防盗用链，所以无法再作为图床，而github在国内有时候不是很顺畅，所以我改用了阿里云oss对象存储，来作为图床，一年9元人民币，一个人用我觉得应该还是没问题的，后续遇到问题再说吧。 文章主要使用了这个作者写的uPic 图床配置教程 - 码云(Gitee) ，自己在这里记录主要是为了留个备份。 配置项说明">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-08-18T08:37:41.000Z">
-<meta property="article:modified_time" content="2021-08-19T01:46:04.286Z">
+<meta property="article:modified_time" content="2022-04-24T09:41:47.860Z">
 <meta property="article:author" content="Rayqian">
 <meta property="article:tag" content="uPic">
 <meta property="article:tag" content="gitee">
+<meta property="article:tag" content="阿里云oss">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Wa!RayQ&#39;s house" type="application/atom+xml">
@@ -231,7 +232,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      图片上传工具（uPic 图床 + Gitee）
+      图片上传工具（uPic 图床 + 阿里云oss）(Gitee废弃)
     </h1>
   
 
@@ -255,7 +256,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>文章主要使用了这个作者写的<a target="_blank" rel="noopener" href="https://blog.svend.cc/upic/tutorials/gitee/">uPic 图床配置教程 - 码云(Gitee)
+        <h1 id="2022年4月17日-说明："><a href="#2022年4月17日-说明：" class="headerlink" title="2022年4月17日  说明："></a>2022年4月17日  说明：</h1><p><font color="red">目前<code>gitee</code>启用了防盗用链，所以无法再作为图床，而<code>github</code>在国内有时候不是很顺畅，所以我改用了<code>阿里云oss</code>对象存储，来作为图床，一年9元人民币，一个人用我觉得应该还是没问题的，后续遇到问题再说吧。<br></font></p>
+<p>文章主要使用了这个作者写的<a target="_blank" rel="noopener" href="https://blog.svend.cc/upic/tutorials/gitee/">uPic 图床配置教程 - 码云(Gitee)
 </a>，自己在这里记录主要是为了留个备份。</p>
 <h2 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h2><span id="more"></span>
 <ul>
@@ -268,6 +270,8 @@
 </ul>
 <h2 id="Token-获取方式"><a href="#Token-获取方式" class="headerlink" title="Token 获取方式"></a>Token 获取方式</h2><p>1.点击<a target="_blank" rel="noopener" href="https://gitee.com/profile/personal_access_tokens/new">进入码云 Token 创建页面(点击进入)</a><br>2.勾选<code>projects</code>访问权限或者全选都可以。然后滚动页面到底部，点击Generate token按钮来生成 token<br>3.复制生成好的 Token 值到 uPic token 输入框<br><font color="red">注意：此 Token 只会显示一次！请务必保存好，否则之后丢失了，就得重新创建了~</font></p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>Gitee 私有库里面的图片无法展示，需要改为公开库才行</p>
+<p>Gitee目前已经无法作为图床了，因为启用了防盗链，请求的链接头不是gitee的地址就不会获取到你自己的图片。</p>
+<p>所以转成用阿里云oss</p>
 
       
 
@@ -286,6 +290,10 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">gitee</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">阿里云oss</a>
         		</li>
       		
 		</ul>
@@ -451,7 +459,7 @@ gitment.render('gitment-ctn')
 		<!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 		<script async src="/busuanzi.pure.js"></script>
 		<div class="footer-left">
-    		&copy; 2022 Rayqian
+    		&copy; 2023 Rayqian
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -649,6 +657,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">-svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">阿里云oss</a>
               </li>
             
             <div class="clearfix"></div>
