@@ -24,7 +24,7 @@ source ~/.zshrc
 ```
 然后直接输入`vim`就能打开macvim
 接下来给vim做配置
-
+<!-- more -->
 # vim配置参数
 给`vim`添加参数
 

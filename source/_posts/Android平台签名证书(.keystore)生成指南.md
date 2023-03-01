@@ -13,7 +13,7 @@ Android平台打包发布apk应用，需要使用数字证书（.keystore文件�
 
 安装JRE环境（推荐使用JRE8环境，如已有可跳过）
 可从Oracle官方下载jre安装包：https://www.oracle.com/technetwork/java/javase/downloads/index.html
-
+<!-- more -->
 生成签名证书
 使用keytool -genkey命令生成证书：
 ```
