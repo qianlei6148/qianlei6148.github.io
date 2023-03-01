@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://ql-u-pic.oss-cn-shanghai.aliyuncs.com/upic/2022/04/30/S5uWGSXdFkZP.png">
 <meta property="og:image" content="http://ql-u-pic.oss-cn-shanghai.aliyuncs.com/upic/2022/04/30/4PFxuAnPLPst.png">
 <meta property="article:published_time" content="2022-04-30T14:09:16.000Z">
-<meta property="article:modified_time" content="2022-05-01T05:57:28.695Z">
+<meta property="article:modified_time" content="2023-03-01T02:04:58.740Z">
 <meta property="article:author" content="Rayqian">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://ql-u-pic.oss-cn-shanghai.aliyuncs.com/upic/2022/04/30/cejKn047q970.png">
@@ -263,6 +263,7 @@
 </blockquote>
 <p>可以使用JRE环境中的keytool命令生成：</p>
 <p>安装JRE环境（推荐使用JRE8环境，如已有可跳过）<br>可从Oracle官方下载jre安装包：<a target="_blank" rel="noopener" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+<span id="more"></span>
 <p>生成签名证书<br>使用keytool -genkey命令生成证书：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -alias XXXXalias -keyalg RSA -keysize 2048 -validity 36500 -keystore XXXX.keystore</span><br></pre></td></tr></table></figure>
 <p>XXXXalias是证书别名，可修改为自己想设置的字符，建议使用英文字母和数字<br>XXXX.keystore是证书文件名称，可修改为自己想设置的文件名称，也可以指定完整文件路径<br>36500是证书的有效期，表示100年有效期，单位天，建议时间设置长一点，避免证书过期<br>回车后会提示：</p>

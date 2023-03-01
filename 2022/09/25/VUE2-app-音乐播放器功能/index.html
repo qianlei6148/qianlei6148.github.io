@@ -9,15 +9,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>uniapp 音乐播放器功能 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="uniapp 移动端的音乐播放器写的原因 这个app从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于uniapp的多次更新，导致app出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个app遇到的问题有些难以处理。因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。  功能**要点**：点击">
+  <meta name="description" content="uniapp 移动端的音乐播放器写的原因 这个app从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于uniapp的多次更新，导致app出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个app遇到的问题有些难以处理。因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="uniapp 音乐播放器功能">
 <meta property="og:url" content="http://yoursite.com/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="uniapp 移动端的音乐播放器写的原因 这个app从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于uniapp的多次更新，导致app出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个app遇到的问题有些难以处理。因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。  功能**要点**：点击">
+<meta property="og:description" content="uniapp 移动端的音乐播放器写的原因 这个app从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于uniapp的多次更新，导致app出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个app遇到的问题有些难以处理。因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-09-25T02:10:51.000Z">
-<meta property="article:modified_time" content="2022-09-28T05:35:11.918Z">
+<meta property="article:modified_time" content="2023-03-01T02:08:37.971Z">
 <meta property="article:author" content="Rayqian">
 <meta name="twitter:card" content="summary">
   
@@ -256,6 +256,7 @@
         <h1 id="uniapp-移动端的音乐播放器"><a href="#uniapp-移动端的音乐播放器" class="headerlink" title="uniapp 移动端的音乐播放器"></a>uniapp 移动端的音乐播放器</h1><h2 id="写的原因"><a href="#写的原因" class="headerlink" title="写的原因"></a>写的原因</h2><blockquote>
 <p>这个<code>app</code>从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于<code>uniapp</code>的多次更新，导致<code>app</code>出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个<code>app</code>遇到的问题有些难以处理。<br>因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。</p>
 </blockquote>
+<span id="more"></span>
 <h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>**<em>要点</em>**：点击播放键可以播放音乐，切换画面后，音乐不会停止，然后在旁边出现一个mini的音乐播放器，可以随时退出。<br>（我并没有使用一些已经写好的player,只要是因为并不符合我所需要的要求，即只需要背景音乐可以停止和继续的功能就行）<br>1、需要做一个<code>mini</code>版的音乐播放器,放在页面的左边，在播放期间可以随时播放和停止。<br>2、由于没有页面和退出也能听到音乐，所以必须使用全局变量。 我使用了<code>vuex</code>来控制这些变量。<br>3、如何把上面两点写进<code>app</code>中。</p>
 <h3 id="1、播放器样式"><a href="#1、播放器样式" class="headerlink" title="1、播放器样式"></a>1、播放器样式</h3><h4 id="注：原本想要找到我之前参考的博客，可以说这个播放器，基本上使用了那名作者的功能，当然为了结合自身app，对他写功能也进行了修改，但时隔3个多月，我已经找不到该网站了，如果该作者看到这个是你写的功能，可以和我邮件联系，我会标注"><a href="#注：原本想要找到我之前参考的博客，可以说这个播放器，基本上使用了那名作者的功能，当然为了结合自身app，对他写功能也进行了修改，但时隔3个多月，我已经找不到该网站了，如果该作者看到这个是你写的功能，可以和我邮件联系，我会标注" class="headerlink" title="(注：原本想要找到我之前参考的博客，可以说这个播放器，基本上使用了那名作者的功能，当然为了结合自身app，对他写功能也进行了修改，但时隔3个多月，我已经找不到该网站了，如果该作者看到这个是你写的功能，可以和我邮件联系，我会标注)"></a>(<strong><em>注：原本想要找到我之前参考的博客，可以说这个播放器，基本上使用了那名作者的功能，当然为了结合自身app，对他写功能也进行了修改，但时隔3个多月，我已经找不到该网站了，如果该作者看到这个是你写的功能，可以和我邮件联系，我会标注</em></strong>)</h4><p>页面的样式我需要做成mini型，放在各个<code>page</code>中，而不是放在最下面，因为我不是<code>音乐app</code>,所以只需要在播放期间可以停止。<br>因此我添加一个<code>component</code>,命名为<code>playermin.vue</code>,并把播放器的样式结构添加进去。</p>
 <blockquote>

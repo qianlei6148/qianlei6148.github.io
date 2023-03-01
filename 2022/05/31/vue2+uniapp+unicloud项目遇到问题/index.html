@@ -9,16 +9,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>vue2+uniapp+unicloud项目遇到问题 | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2022-9-10更新我做了一个vue2的app。在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。由于是移动端，所以现在把遇到的一些问题和需求总结下。 1.移动端tabbar无法使用svg图标。app打包后，打开程序遇到的第一个问题是tabbar图标居然无法显示。由于想使用粉红色的图标，所以在阿里图标库中找了几个svg图标，在h5测试时没有问题，但在移动端上却出">
+  <meta name="description" content="2022-9-10更新我做了一个vue2的app。在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。由于是移动端，所以现在把遇到的一些问题和需求总结下。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue2+uniapp+unicloud项目遇到问题">
 <meta property="og:url" content="http://yoursite.com/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="2022-9-10更新我做了一个vue2的app。在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。由于是移动端，所以现在把遇到的一些问题和需求总结下。 1.移动端tabbar无法使用svg图标。app打包后，打开程序遇到的第一个问题是tabbar图标居然无法显示。由于想使用粉红色的图标，所以在阿里图标库中找了几个svg图标，在h5测试时没有问题，但在移动端上却出">
+<meta property="og:description" content="2022-9-10更新我做了一个vue2的app。在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。由于是移动端，所以现在把遇到的一些问题和需求总结下。">
 <meta property="og:locale">
 <meta property="og:image" content="http://ql-u-pic.oss-cn-shanghai.aliyuncs.com/upic/2022/09/10/0eFlm8GNYzac.png">
 <meta property="article:published_time" content="2022-05-31T05:36:58.000Z">
-<meta property="article:modified_time" content="2022-10-11T01:41:13.694Z">
+<meta property="article:modified_time" content="2023-03-01T02:09:18.928Z">
 <meta property="article:author" content="Rayqian">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://ql-u-pic.oss-cn-shanghai.aliyuncs.com/upic/2022/09/10/0eFlm8GNYzac.png">
@@ -256,6 +256,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="2022-9-10更新"><a href="#2022-9-10更新" class="headerlink" title="2022-9-10更新"></a>2022-9-10更新</h2><p>我做了一个vue2的app。<br>在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。<br>由于是移动端，所以现在把遇到的一些问题和需求总结下。</p>
+<span id="more"></span>
 <h3 id="1-移动端tabbar无法使用svg图标。"><a href="#1-移动端tabbar无法使用svg图标。" class="headerlink" title="1.移动端tabbar无法使用svg图标。"></a>1.移动端tabbar无法使用svg图标。</h3><p>app打包后，打开程序遇到的第一个问题是tabbar图标居然无法显示。<br>由于想使用粉红色的图标，所以在阿里图标库中找了几个svg图标，在h5测试时没有问题，但在移动端上却出了问题，图标不显示，我把图标换成png发现显示了，然后我用搜索引擎一查，发现是原生的tabbar不支持svg图标，只能使用自定义tabbar.</p>
 <h3 id="2-class-”swipe-item”导致轮播图（banner）无法显示"><a href="#2-class-”swipe-item”导致轮播图（banner）无法显示" class="headerlink" title="2.class=”swipe-item”导致轮播图（banner）无法显示"></a>2.class=”swipe-item”导致轮播图（banner）无法显示</h3><p>想想看，当打开app,发现首页上方背景是灰的，下面tabbar又是无图标的时候，自己的内心是多么崩溃，等于做了个寂寞。<br>后来发现这个class里面的样式在app中是失效的，图片不知道定位到了哪里。去除了这个class样式后，banner图终于显示出来了</p>
 <h3 id="3-我的页面中无法显示问题。"><a href="#3-我的页面中无法显示问题。" class="headerlink" title="3.我的页面中无法显示问题。"></a>3.<code>我的</code>页面中无法显示问题。</h3><p>这个问题困扰了我一阵，明明h5端是能显示的，但移动端却页面空白。<br>后来发现是定义内容的时候，对象最后一个参数后面多了一个逗号。</p>
