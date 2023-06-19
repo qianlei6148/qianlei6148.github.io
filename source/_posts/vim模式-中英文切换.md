@@ -48,3 +48,24 @@ tags:
         vim_mode: true
 ```
 重新部署后，就能愉快的使用了。
+--------------------------------------------------------
+## 去除ctrl+~快捷键
+`ctrl+~` 快捷键是切换输入方案菜单的快捷键,但在使用`idea`或者`vsCode`时会快捷键冲突,所以需要注释
+在输入法菜单中选择`用户设定`,打开目录后,打开配置文件`default.yaml`(这是我本机的位置)
+```itermal
+vim build/default.yaml
+```
+找到`switcher`,并注释`- Control+grave`
+处理完结果如下
+```vim
+switcher:
+  abbreviate_options: true
+  caption: "〔方案選單〕"
+  fold_options: true
+  hotkeys:
+    # - "Control+grave"
+    - "Control+Shift+grave"
+    - F4
+
+```
+
