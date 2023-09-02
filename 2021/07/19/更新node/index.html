@@ -9,15 +9,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>更新node | Wa!RayQ&#39;s house</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="更新node1.windows 更新node如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。 2.mac&#x2F;linux 更新node如果是mac&#x2F;linux, 直接打开控制台">
+  <meta name="description" content="使用n更新和切换node1.windows 更新node如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。切换,可以使用 n 工具,和下面是一样的 2.mac&#x2F;linux 更新&#x2F;切换 node如果是mac&#x2F;linux, 直接打开控制台**我使用的时候会报权限问题,所以以下的命令除了查看版本号之外,其余的我都使用sudo n来进行 **">
 <meta property="og:type" content="article">
 <meta property="og:title" content="更新node">
 <meta property="og:url" content="http://yoursite.com/2021/07/19/%E6%9B%B4%E6%96%B0node/index.html">
 <meta property="og:site_name" content="Wa!RayQ&#39;s house">
-<meta property="og:description" content="更新node1.windows 更新node如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。 2.mac&#x2F;linux 更新node如果是mac&#x2F;linux, 直接打开控制台">
+<meta property="og:description" content="使用n更新和切换node1.windows 更新node如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。切换,可以使用 n 工具,和下面是一样的 2.mac&#x2F;linux 更新&#x2F;切换 node如果是mac&#x2F;linux, 直接打开控制台**我使用的时候会报权限问题,所以以下的命令除了查看版本号之外,其余的我都使用sudo n来进行 **">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-07-19T02:01:57.000Z">
-<meta property="article:modified_time" content="2021-07-23T03:02:36.106Z">
+<meta property="article:modified_time" content="2023-07-25T02:35:04.562Z">
 <meta property="article:author" content="Rayqian">
 <meta property="article:tag" content="node">
 <meta name="twitter:card" content="summary">
@@ -254,32 +254,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="更新node"><a href="#更新node" class="headerlink" title="更新node"></a>更新node</h2><h3 id="1-windows-更新node"><a href="#1-windows-更新node" class="headerlink" title="1.windows 更新node"></a>1.windows 更新node</h3><p>如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。</p>
-<h3 id="2-mac-linux-更新node"><a href="#2-mac-linux-更新node" class="headerlink" title="2.mac/linux 更新node"></a>2.mac/linux 更新node</h3><p>如果是mac/linux, 直接打开控制台</p>
+        <h2 id="使用n更新和切换node"><a href="#使用n更新和切换node" class="headerlink" title="使用n更新和切换node"></a>使用n更新和切换node</h2><h3 id="1-windows-更新node"><a href="#1-windows-更新node" class="headerlink" title="1.windows 更新node"></a>1.windows 更新node</h3><p>如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。<br>切换,可以使用 <code>n</code> 工具,和下面是一样的</p>
+<h3 id="2-mac-linux-更新-切换-node"><a href="#2-mac-linux-更新-切换-node" class="headerlink" title="2.mac/linux 更新/切换 node"></a>2.mac/linux 更新/切换 node</h3><p>如果是mac/linux, 直接打开控制台<br>**我使用的时候会报权限问题,所以以下的命令除了查看版本号之外,其余的我都使用<code>sudo n</code>来进行 **</p>
 <span id="more"></span>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先查看你的node版本</span></span><br><span class="line"><span class="variable">$node</span> -v</span><br><span class="line"><span class="comment"># 使用Node Binary管理模块&quot;n&quot;</span></span><br><span class="line"><span class="comment"># 全局安装管理模板&quot;n&quot;</span></span><br><span class="line"><span class="variable">$npm</span> install -g n</span><br></pre></td></tr></table></figure>
-<p>安装管理模块<code>n</code>后，可以使用如下三种方式更新<code>node</code></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 升级到指定的版本 n 版本号</span></span><br><span class="line"><span class="variable">$n</span> 8.4.1</span><br><span class="line"><span class="comment"># 安装稳定版本(长期支持版本，稳定)</span></span><br><span class="line"><span class="variable">$n</span> stable</span><br><span class="line"><span class="comment"># 安装最新版本(当前发布的最新版本，含最新功能)</span></span><br><span class="line"><span class="variable">$n</span> latest</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先查看你的node版本</span></span><br><span class="line"><span class="variable">$node</span> -v</span><br><span class="line"><span class="comment"># 使用Node Binary管理模块&quot;n&quot;</span></span><br><span class="line"><span class="comment"># 全局安装管理模板&quot;n&quot;</span></span><br><span class="line"><span class="comment">#$npm install -g n</span></span><br><span class="line"><span class="variable">$sudo</span> npm install -g n</span><br></pre></td></tr></table></figure>
+<p>安装管理模块<code>n</code>后，可以使用如下三种方式更新<code>node</code>.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 升级到指定的版本 n 版本号</span></span><br><span class="line"><span class="variable">$sudo</span> n 8.4.1</span><br><span class="line"><span class="comment"># 安装稳定版本(长期支持版本，稳定)</span></span><br><span class="line"><span class="variable">$sudo</span> n stable</span><br><span class="line"><span class="comment"># 安装最新版本(当前发布的最新版本，含最新功能)</span></span><br><span class="line"><span class="variable">$sudo</span> n latest</span><br></pre></td></tr></table></figure>
 <p>安装好最新版后，查看是否成功</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$node</span> -v</span><br><span class="line">v14.17.3</span><br></pre></td></tr></table></figure>
 <h4 id="问题-如果得到的版本信息不正确，还是老版本"><a href="#问题-如果得到的版本信息不正确，还是老版本" class="headerlink" title="问题 如果得到的版本信息不正确，还是老版本"></a>问题 如果得到的版本信息不正确，还是老版本</h4><h5 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式:"></a>解决方式:</h5><blockquote>
 <p><code>n</code> 切换之后的<code>node</code>默认装在 <code>/usr/local/bin/node</code>，先用 <code>which node</code> 检查一下当前使用的 <code>node</code> 是否是这个路径下的。如上缘由，一般都是因为当前版本指定到了其他路径，更新下<code>/etc/profile</code>文件指定即可。</p>
 </blockquote>
+<p>我是因为以前在<code>vim ~/.zshrc</code>中进行了配置,导致无法切换</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#我配置了这三项,导致无法切换,最后我把这三个注释了之后,可以切换了</span><br><span class="line">#export PATH=<span class="string">&quot;/usr/local/opt/node@14/bin:$PATH&quot;</span></span><br><span class="line">#export LDFLAGS=<span class="string">&quot;-L/usr/local/opt/node@14/lib&quot;</span></span><br><span class="line">#export CPPFLAGS=<span class="string">&quot;-I/usr/local/opt/node@14/include&quot;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="扩展知识-管理模块-n"><a href="#扩展知识-管理模块-n" class="headerlink" title="扩展知识 : 管理模块 n"></a>扩展知识 : 管理模块 <em><strong><code>n</code></strong></em></h3><blockquote>
 <p><code>n是Node的一个模块，作者是TJ Holowaychuk（鼎鼎大名的Express框架作者）</code>。<br>安装好后，你可以直接输入<code>n</code>后输出当前已经安装的node版本以及正在使用的版本（前面有一个o），你可以通过移动上下方向键来选择要使用的版本，最后按回车生效.</p>
 </blockquote>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$n</span></span><br><span class="line">    0.10.1 </span><br><span class="line">    0.10.15 </span><br><span class="line">o   0.10.21 </span><br><span class="line">    0.11.8</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> n</span><br><span class="line">    0.10.1 </span><br><span class="line">    0.10.15 </span><br><span class="line">o   0.10.21 </span><br><span class="line">    0.11.8</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>删除某个版本</p>
 </blockquote>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$n</span> rm 0.10.1 </span><br></pre></td></tr></table></figure>
-
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> n rm 0.10.1 </span><br></pre></td></tr></table></figure>
+<h3 id="扩展知识-n和nvm的区别"><a href="#扩展知识-n和nvm的区别" class="headerlink" title="扩展知识 : n和nvm的区别"></a>扩展知识 : <em><strong><code>n和nvm的区别</code></strong></em></h3><p> 我们在使用 <code>n</code> 管理 <code>node</code> 版本前，首先需要一个 <code>node</code> 环境。我们或者用 <code>Homebrew</code> 来安装一个 <code>node</code>，或者从官网下载 pkg 来安装，总之我们得先自己装一个 <code>node</code>, <code>n</code>本身是没法给你装的。<br> 在安装的时候，n 会先将指定版本的 node 存储下来，然后将其复制到我们熟知的路径 /usr/local/bin，非常简单明了。当然由于 n 会操作到非用户目录，所以需要加 sudo 来执行命令。</p>
+<blockquote>
+<p>两者区别:</p>
+<ol>
+<li>安装简易度。nvm 安装起来显然是要麻烦不少；n 这种安装方式更符合 node 的惯性思维。见仁见智吧。</li>
+<li>系统支持。注意， nvm 不支持 Windows。</li>
+<li>对全局模块的管理。n 对全局模块毫无作为，因此有可能在切换了 node 版本后发生全局模块执行出错的问题；nvm 的全局模块存在于各自版本的沙箱中，切换版本后需要重新安装，不同版本间也不存在任何冲突。</li>
+<li>关于 node 路径。n 是万年不变的 /usr/local/bin；nvm 需要手动指定路径。</li>
+</ol>
+</blockquote>
 <hr>
 <h4 id="p-s-参考文章："><a href="#p-s-参考文章：" class="headerlink" title="p.s. 参考文章："></a>p.s. 参考文章：</h4><blockquote>
 <ol>
 <li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e41a7aa0288c">轻松两步完成Node.js版本升级</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/guzhao593/article/details/81712016">windows node版本如何升级</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiangbo_phd/article/details/51476155">利用N来管理nodejs的版本问题</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34710578/article/details/94598428">node版本管理 n和nvm说明</a></li>
 </ol>
 </blockquote>
 
