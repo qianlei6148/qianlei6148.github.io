@@ -1,7 +1,8 @@
 ---
 title: git提交规范 Commitizen
 date: 2023-02-27 10:40:38
-tags:
+categories: [tool]
+tags: [git]
 ---
 ## git提交规范 Commitizen
    Commitizen是一个撰写符合上面Commit Message标准的一款工具，可以帮助开发者提交符合规范的Commit Message。

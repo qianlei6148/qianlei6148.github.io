@@ -1,7 +1,8 @@
 ---
 title: JS判断undefined和null和空字符串
 date: 2023-05-10 17:32:53
-tags:
+categories: [technology]
+tags: [js]
 ---
 
 一般新人会这样写：

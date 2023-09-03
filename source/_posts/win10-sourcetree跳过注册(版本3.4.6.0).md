@@ -1,7 +1,7 @@
 ---
 title: win10 sourcetree跳过注册(版本3.4.6.0)
 date: 2021-09-13 10:20:11
-tags:
+tags: [SourceTree]
 ---
 > 文章参考了酷极和的文章[Windows10 下安装SourceTree 跳过注册 Bitbucket](https://www.cnblogs.com/daizhongxing/p/12251672.html)，主要是用来记录下自己这边的操作。
 

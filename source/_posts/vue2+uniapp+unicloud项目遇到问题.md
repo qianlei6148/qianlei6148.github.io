@@ -1,7 +1,8 @@
 ---
 title: vue2+uniapp+unicloud项目遇到问题
 date: 2022-05-31 13:36:58
-tags:
+categories: [technology]
+tags: [uniapp,vue]
 ---
 ## 2022-9-10更新
 我做了一个vue2的app。

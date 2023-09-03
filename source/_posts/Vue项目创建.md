@@ -2,7 +2,7 @@
 title: Vue项目创建
 date: 2020-08-31 09:36:00
 categories: [technology]
-tags: [python]
+tags: [python,vue]
 ---
 ## 1.创建项目
 在默认配置都有的情况下：

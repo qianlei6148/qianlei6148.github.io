@@ -1,7 +1,8 @@
 ---
 title: uniapp 音乐播放器功能
 date: 2022-09-25 10:10:51
-tags:
+categories: [technology]
+tags: [uniapp,vue]
 ---
 # uniapp 移动端的音乐播放器
 ## 写的原因

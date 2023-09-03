@@ -1,6 +1,7 @@
 ---
 title: mac下载EasyConnect软件
 date: 2021-10-14 09:10:02
+categories: [tool]
 tags: -技术
 ---
 >前言

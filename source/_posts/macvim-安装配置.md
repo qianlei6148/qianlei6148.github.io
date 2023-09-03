@@ -1,10 +1,10 @@
 ---
 title: macvim和tmux 安装配置
 date: 2022-11-06 16:42:18
-tags:
+tags: [vim,tmux]
 ---
 # macvim 和 tmux 安装
-
+<!-- more -->
 
 # 配置插件
 ```bash
@@ -24,7 +24,7 @@ source ~/.zshrc
 ```
 然后直接输入`vim`就能打开macvim
 接下来给vim做配置
-<!-- more -->
+
 # vim配置参数
 给`vim`添加参数
 

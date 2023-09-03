@@ -1,7 +1,7 @@
 ---
 title: mac ffmpeg下载配置
 date: 2021-11-15 13:42:35
-tags:
+tags: [bilibili,ffmpeg]
 ---
 为了把`b站`的视频`flv`格式转换成`MP4`格式，所以下载`ffmpeg`用来转换`MP4`格式.
 正常下载使用 `brew`，但不知道为什么一直报错无法下载，最后觉得直接[官网下载](https://ffmpeg.org/download.html)后，配置使用

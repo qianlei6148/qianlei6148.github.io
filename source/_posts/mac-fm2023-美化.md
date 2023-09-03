@@ -1,7 +1,7 @@
 ---
 title: mac fm2023 美化
 date: 2023-06-19 10:24:26
-tags:
+tags: [game]
 ---
 
 >下载完fm后,想放入头像和logo,但网上基本都是windows的
