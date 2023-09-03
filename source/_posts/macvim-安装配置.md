@@ -359,3 +359,13 @@ tmux kill-server
 # 在控制台界面，关闭指定session：
 tmux kill-session -t <target-session>
 ```
+注意：如果这时输入tmux，会默认重新开启一个新的session。
+
+在session里时，Ctrl + b + $ 对当前session进行重命名。
+
+在terminal里，可直接对某个特定session重命名：
+```sh
+tmux rename-session -t [session_old_name] [session_new_name]
+```
+Ctrl + b + s 可视化选择任意session，同时，按下左右键可以对当前session的windows进行展开和收起，以及对某个windows的panes进行展开并选择某一pane。
+
