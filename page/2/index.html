@@ -220,14 +220,14 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-macvim-安装配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-磁盘无法推出" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/11/06/macvim-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">macvim和tmux 安装配置</a>
+      <a class="article-title" href="/2024/02/06/%E7%A3%81%E7%9B%98%E6%97%A0%E6%B3%95%E6%8E%A8%E5%87%BA/">磁盘无法推出</a>
     </h1>
   
 
@@ -235,8 +235,8 @@
         
 
 
-<a href="/2022/11/06/macvim-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2022-11-06T08:42:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-06</time>
+<a href="/2024/02/06/%E7%A3%81%E7%9B%98%E6%97%A0%E6%B3%95%E6%8E%A8%E5%87%BA/" class="archive-article-date">
+  	<time datetime="2024-02-06T09:37:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-06</time>
 </a>
 
 
@@ -246,8 +246,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="macvim-和-tmux-安装"><a href="#macvim-和-tmux-安装" class="headerlink" title="macvim 和 tmux 安装"></a>macvim 和 tmux 安装</h1>
-        
+        <p>MAC移动硬盘无法正常推出：“磁盘无法推出，因为一个或多个程序正在使用它”<br>关闭所有程序还是报这个错<br>那就应该是访达的原因<br>重新打开也没办法<br>解决：<br>终端</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查看磁盘</span><br><span class="line">df -lh</span><br><span class="line">#或者</span><br><span class="line">diskutil list</span><br><span class="line"></span><br><span class="line">#命令退磁盘,xxxx是list中显示的磁盘</span><br><span class="line">diskutil unmount /dev/xxxxxx  </span><br><span class="line">#会报错</span><br><span class="line">#failed to unmount: dissented by PID <span class="number">52259</span></span><br><span class="line">#根据PID，到`活动监视器`中找,直接杀掉</span><br></pre></td></tr></table></figure>
+<p>如图：<br><img src="http://ql-u-pic.oss-cn-shanghai.aliyuncs.com/upic/2024/02/06/0EGHjoOJSIdX.png"></p>
+<p>目前看磁盘是因为<code>mdsync</code>占用了导致退出失败</p>
+
       
 
       
@@ -255,26 +258,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tmux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/11/06/macvim-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">展开全文 >></a>
+          <a class="article-more-a" href="/2024/02/06/%E7%A3%81%E7%9B%98%E6%97%A0%E6%B3%95%E6%8E%A8%E5%87%BA/">展开全文 >></a>
         </p>
       
 
@@ -304,14 +292,14 @@
 
 
   
-    <article id="post-VUE2-app-音乐播放器功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-繁花" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/">uniapp 音乐播放器功能</a>
+      <a class="article-title" href="/2024/01/14/%E7%B9%81%E8%8A%B1/">繁花</a>
     </h1>
   
 
@@ -319,8 +307,8 @@
         
 
 
-<a href="/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/" class="archive-article-date">
-  	<time datetime="2022-09-25T02:10:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-25</time>
+<a href="/2024/01/14/%E7%B9%81%E8%8A%B1/" class="archive-article-date">
+  	<time datetime="2024-01-13T16:19:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-14</time>
 </a>
 
 
@@ -330,8 +318,401 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="uniapp-移动端的音乐播放器"><a href="#uniapp-移动端的音乐播放器" class="headerlink" title="uniapp 移动端的音乐播放器"></a>uniapp 移动端的音乐播放器</h1><h2 id="写的原因"><a href="#写的原因" class="headerlink" title="写的原因"></a>写的原因</h2><blockquote>
-<p>这个<code>app</code>从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于<code>uniapp</code>的多次更新，导致<code>app</code>出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个<code>app</code>遇到的问题有些难以处理。<br>因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。</p>
+        <p>作为一个上海人，繁花这部剧的上映那我肯定是欢喜的，<br>刚知道繁花，是从我老妈那里知道的，她说我曾经看过繁花这本书，所以推荐我看看，我只想说妈妈，你高估我了，我没看过书</p>
+<p>oe<br>he 我是偏向he的观众，但看着解释，其实也有些不理解，逻辑不是很能自洽<br>be</p>
+<p>be的太彻底了，你们he就是自嗨，摆脱，你们的be也是自嗨啊</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/01/14/%E7%B9%81%E8%8A%B1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-脱口秀" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/01/13/%E8%84%B1%E5%8F%A3%E7%A7%80/">脱口秀</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2024/01/13/%E8%84%B1%E5%8F%A3%E7%A7%80/" class="archive-article-date">
+  	<time datetime="2024-01-13T14:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-13</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>（估算了下，时长有7~9分钟）<br>大家好，我是来自供应链部门的钱磊<br>这次是我第一次讲脱口秀，生平第一次，当然如果失败了，那肯定就是最后一次，啊，有些紧张，我今后是否能成为脱口秀演员那可是在此一举啊，<br>说实话，当俏良通知我要我在我们供应链部门imc项目组中选出一个人来说脱口秀，并且好心提醒我如果没人愿意，那就希望我能上的时候，我就知道这个任务非我莫属<br>（痛心疾首）你们啊！我在群里一个个@，你们连回都不回啊，甚至连拒绝都不愿说出口<br>好吧，那就我来上吧<br> 相信我，我其实很自信的（耸拉着脸）。<br>（昂首挺胸）不过领导很体谅我，说可以来个搭档，好的，在场的各位，有谁愿意来和我搭档来讲脱口秀！<br>积极报名啊<br>（没人）啊 ~~~ 你们突然的安静让我猝不及防啊<br>（。。。下面是最不可能发生的事）<br>（有人）诶呦，居然真有人想和我搭档啊，不过呢，搭档是要契合度的，来，回答我一个问题，如果我和你最亲密的人同时掉水里，你会救谁。<br>    （救亲密的人）,（抽泣）你就不能装装样子，救救我吗，我不会游泳啊<br>            （反转）不，我已经不相信你了，我们无缘<br>            （不反转）我们无缘<br>    （我），诶呦，诶呦，<br>        （男）羞死了，我们的事还是台后再讲吧<br>        （女）这不好吧，对不起，我是有家室的人，我拒绝<br> 好的，那我还是自个来吧。</p>
+<p>今天公司年会，大家齐聚一堂，是个快乐的日子，所以在这里，我就讲一下我的一件趣事<br> 上一年，相信有很多同事出差了，我也是，也出差了。</p>
+<p> 这次出差的武汉，哎呀，这座城市太棒了，尤其是武汉那边的火车站，哇塞，我在武汉的火车站遇到好多美女，当然也有帅哥，只是没太注意，这是真的，反正我去过好几座城市，在火车站里面能看到那么多美女的唯有武汉，当然帅哥也是，可能吧。<br> 在场一定有武汉的，是不是？<br> （有回应）ok,说的就是你们美女，嗯，还有帅哥<br> （没回应）我知道你们中有人是武汉的，不要谦虚，你们就是帅哥美女。<br>  不过，说道武汉，想必有个景点大家应该都知道，大家知道吗？<br> （有回应，但不是黄鹤楼）说的好，但你的回答超出我的想象<br> （有回应，是黄鹤楼）没错，嘿嘿，一看你就很聪明，和我一样<br> （无回应）好的，虽然你们没说话，但我的读心术已经听到了你们的心声<br> 没错，就是黄鹤楼，啊<br> 昔人已乘黄鹤去，<br> 故人西辞黄鹤楼<br> 此地无银三百两<br> 串了，哈哈<br> 不过这不重要，重要的是我这人，不出差喜欢宅着，一出差就喜欢乱跑。<br> 所以我去黄鹤楼<br> 去黄鹤楼，肯定要备足功课，黄鹤楼距离出差的酒店18公里左右<br> 这样的距离呢，说长，不长，说短，不短<br> 不知道在座的同事，换成你们，会怎么去黄鹤楼呢<br> （无人）看来没什么想法<br> （有人）打的，可以的，简洁有效。公共交通，确实方便，不像以前了，现在一个手机就能走天下。骑车，哇，同道中人啊。<br> 我想大家如果去某个景点，一般要么公交要么出租车<br> 但我就不一样了，我！骑共享单车！哇，想象下，一名翩翩少年，骑在单车上，秀发衣服迎风飘荡，这是多么棒的场景，真是一个完美无比的计划，一个书包，一顶帽子，4瓶矿泉水，来回总共骑行3个小时、36公里的路途，。<br> 既能观赏武汉城市风貌，又能强身健体，简直一举多得啊，我写出这个计划，当时的内心，天才！<br> 但实施的时候还是遇到了些小问题，因为这个计划有个小瑕疵的<br> 我没有考虑到。。。武汉的天气（）<br> 说起来吧，当时的武汉天气，好的没话讲，晴空万里！万里无云啊，<br> 就是有点小热~~~<br> 毕竟嘛，炎炎夏日，肯定是，嗯，稍微有那么一点热的。（尴尬的笑）<br> 就是这个小小的瑕疵，稍微打乱了我的计划，在我出发后的短短3个小时里，4瓶水被我喝完了<br> 啊，这不是我不节制啊，实在是没办法，就拧开瓶盖，我只想喝一小口，（做动作喝水）啊，一不小心就这么喝完了<br> 没水自然要买水，我去了黄鹤楼附近的美食街，名字叫户部巷，我在那里发现了一样我很喜欢喝的饮品，甜酒酿，冰镇的！夏天啊，一杯冰镇的甜酒酿，那是多么好喝啊（变脸）然后我就喝醉了，小小的一杯啊，我只喝了一半，我居然就喝醉了<br> 而且乘着酒劲我还给自己我增加了一个运动项目，那就是步行走完了全长1670.4米的武汉长江大桥，并且是在一天最热的下午1点走完的，<br>想想就汗流浃背了，而且在那座毫无遮蔽的大桥上我还中暑了</p>
+<p> 各位同事，在这里想问下，在喝醉加中暑的情况下，你们觉得我会怎么回酒店呢<br> （不管有没有人回应）<br> 没错，翩翩少年，自然是共享单车！<br>谢谢大家，我是钱磊，提前祝大家节日快乐！ </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/01/13/%E8%84%B1%E5%8F%A3%E7%A7%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-我的足球初心" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/12/26/%E6%88%91%E7%9A%84%E8%B6%B3%E7%90%83%E5%88%9D%E5%BF%83/">阿森纳，寻找我缺失的足球记忆</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2023/12/26/%E6%88%91%E7%9A%84%E8%B6%B3%E7%90%83%E5%88%9D%E5%BF%83/" class="archive-article-date">
+  	<time datetime="2023-12-26T02:21:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-12-26</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>此视频为了寻找我的阿森纳足球记忆。<br>阿森纳，我的主队，持续时间已经超过了10年，嗯，超过10年，这个时间是绝对没问题的，但具体是多久却不记得了，不知从什么时候开始每周关注阿森纳的比赛，赢了高兴输了则会难受个几天。<br>想回忆自己爱上阿森纳的过程，我只能进行追溯了。<br>在dqd上我的账户备注中写了，在06年开始喜欢上阿森纳，但实际上，我其实已经忘记了我是什么时候因为什么才会喜欢上阿森纳，过去的记忆是如此的模糊，模糊到让我有些不知所措。<br>那我就需要自己往前回忆了，看了下dqd，已经注册快10年，在刚注册时阿森纳就已经是我的主队了，那我再往前倒推。<br>在自己的记忆中最模糊应该是从阿森纳中场F4时期，如果是这样，那05~06年就喜欢阿森纳应该是没问题的，但这记忆很模糊，让我有些不敢确定。<br>但记忆就是这样，回忆起当年，记忆中最深刻的并不是足球，但足球又能从脑海中各种犄角旮旯中冒出来，让人实在摸不着头脑。</p>
+<p>有时觉得自己失了忆，记忆最清晰的时期应该是范佩西开始爆发的那个赛季，那么自己应该就是那个时候才喜欢阿森纳的吧，但记忆却告诉我应该并不是。</p>
+<p>08或者09年，FIFA online在中国上市的时候，我选的主队仍然是阿森纳，当时我的心中就是我的主队。</p>
+<p>再回忆，想起童年在街边的电玩店买了几个FIFA的盘，由于当时流行的实况盘没舍得买，买了经典的FIFA98、FIFA99集合盘，而我在这里面选主队时，只选阿森纳，当时是多久的事我已经不记得了，也不记得为何我会选阿森纳作为主队，但还是记得自己当时已经认为阿森纳是我的主队了，却不记得为何。<br>自己最开始喜欢的欧洲球员是阿什利科尔总觉得自己应该是从范佩西可能也就是中前场的球员，范佩西，沃尔科特，威尔希尔，拉姆塞等等，好像我看球的时候阿森纳已经是一个在足球界独占八斗的存在了，dqd上查看，已经10年了，但仍然记得自己刚注册懂球帝时，就把阿森纳设置成了自己的主队，</p>
+<p>再次回顾，突然想起05年左右，在读初中的我对足球应该兴趣不大，玩的是魔兽争霸，但记忆中最深刻的要数我的同桌，因为他是一名极其喜欢德科的球迷，而我的印象中，我一直觉得他喜欢德科可能是因为他和德科长的有几分相像吧。他经常在上课时摆出一张白纸，然后选择自己的阵容，当然不管阵容怎么变化，中场核心的位置必然是德科的。他带我到他家中玩的游戏实况足球，当时实况做的比FIFA要好，很多球迷玩的都是实况。<br>当时我应该还是不怎么会玩的，很多球员都是同桌告诉我才了解的，我完全不会玩实况，所以只是看着他玩，他的主队我忘记了，记忆中好像是白衣服的皇马，如果换成现在我会开玩笑说皇马核心是巴萨的德科，但当时我并不清楚。曾今玩过</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/12/26/%E6%88%91%E7%9A%84%E8%B6%B3%E7%90%83%E5%88%9D%E5%BF%83/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-TikTokDownloader使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/12/26/TikTokDownloader%E4%BD%BF%E7%94%A8/">TikTokDownloader使用</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2023/12/26/TikTokDownloader%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2023-12-26T02:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-12-26</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="TikTokDownloader"><a href="#TikTokDownloader" class="headerlink" title="TikTokDownloader"></a>TikTokDownloader</h1><p>官方地址：<a target="_blank" rel="noopener" href="https://github.com/JoeanAmier/TikTokDownloader/wiki/Documentation">https://github.com/JoeanAmier/TikTokDownloader/wiki/Documentation</a></p>
+<p>下载 EXE 程序 或者 配置运行环境</p>
+<h2 id="直接运行程序"><a href="#直接运行程序" class="headerlink" title="直接运行程序"></a>直接运行程序</h2><p>下载 Releases 发布的 EXE 程序压缩包<br>解压后打开程序文件夹，双击运行 <code>main.exe</code></p>
+<h2 id="通过源码运行"><a href="#通过源码运行" class="headerlink" title="通过源码运行"></a>通过源码运行</h2><p>安装不低于 3.12 版本的 Python 解释器<br>下载最新的源码或 Releases 发布的源码至本地<br>运行 <code>python -m venv venv</code> 命令创建虚拟环境（可选）<br>运行 <code>.\venv\Scripts\activate.ps1</code> 或者 <code>venv\Scripts\activate</code> 命令激活虚拟环境（可选）<br>运行 <code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt</code> 命令安装程序所需模块<br>运行 <code>python .\main.py</code> 或者 <code>python main.py</code> 命令启动 TikTokDownloader</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/12/26/TikTokDownloader%E4%BD%BF%E7%94%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-typeScript" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/10/21/typeScript/">typeScript</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2023/10/21/typeScript/" class="archive-article-date">
+  	<time datetime="2023-10-21T01:53:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-10-21</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>node 安装<br>npm查看<br>tsc安装<br>s</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm i typescript -g</span><br><span class="line">tsc --init //初始化文件夹</span><br><span class="line">tsc //编译目录下所有ts文件</span><br><span class="line">tsc xx.ts  //编译</span><br><span class="line">ts -w xx.ts //监听文件，可以随时修改</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>ts-node<br>直接运行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm i ts-node -g</span><br><span class="line">ts-node xxx.ts</span><br></pre></td></tr></table></figure>
+<p>第一个<br>helloworld</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const hw:string = &quot;helloworld&quot;;</span><br><span class="line">console.log(hw);</span><br></pre></td></tr></table></figure>
+<p>数据类型</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let num1:number = 1</span><br><span class="line">let num2:number = 1.12</span><br><span class="line">let num3:number = 0b12 //2进制</span><br><span class="line">let num4:number = 0o0021 //8进制</span><br><span class="line">let num5:number = 0x1245 //16进制</span><br><span class="line">let num6:number = NaN //not a number</span><br><span class="line">let b:boolean = true</span><br><span class="line">let s:string = &quot;森森&quot;</span><br></pre></td></tr></table></figure>
+<p>空类型：null,undefined</p>
+<ul>
+<li>null:空值 （empty value）</li>
+<li>undefined:没有值 （missing value）<br>或者</li>
+<li>null:曾赋值，但现在没有值</li>
+<li>undefined:未赋值<br>null是关键词，不能作为变量<br>undefined是标识符，可以作为变量</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let s1:null = null</span><br><span class="line">let s2:undefined = undefined </span><br></pre></td></tr></table></figure>
+<p>void</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function setName(name:string):void&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>any/unknown<br>any会关闭ts检查，会让ts直接用成js<br>unknown和any的区别：unknow不能赋值属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//都不会报错</span><br><span class="line">let a:any = &quot;123&quot;</span><br><span class="line">a=12</span><br><span class="line">a.xxx=&quot;111&quot;</span><br><span class="line">a.push(&quot;23&quot;)</span><br><span class="line"></span><br><span class="line">//会报错</span><br><span class="line">let n:unknown = &quot;123&quot;</span><br><span class="line">n.xxx=&quot;ddd&quot;//error,没有定义的属性无法赋值</span><br></pre></td></tr></table></figure>
+
+<p>联合类型<br>用户函数的参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function setN(n:string|number):number&#123;</span><br><span class="line">    return 1;</span><br><span class="line">&#125;</span><br><span class="line">setN(&quot;12&quot;)</span><br><span class="line">setN(12 )</span><br></pre></td></tr></table></figure>
+
+<p>类型断言<br>将不确定的类型定义为确定的类型<br>达到在编译器层面的欺骗</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let img = document.getElementById(&quot;#img&quot;);</span><br><span class="line">img.src=&quot;http:xxxx&quot; //error</span><br><span class="line">//断言</span><br><span class="line">let img = document.getElementById(&quot;#img&quot;) as HTMLImageElement;</span><br><span class="line">img.src=&quot;http:xxxx&quot; //ok</span><br><span class="line"></span><br><span class="line">let img = &lt;HTMLImageElement&gt;document.getElementById(&quot;#img&quot;);</span><br><span class="line">img.src=&quot;http:xxxx&quot; //ok</span><br></pre></td></tr></table></figure>
+<p>两种写法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">value as Type</span><br><span class="line">&lt;Type&gt;value</span><br></pre></td></tr></table></figure>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let a1:string[] = [&quot;11&quot;,&quot;22&quot;]</span><br><span class="line">let a2:boolean[] = [true,false]</span><br><span class="line">let a3:Array&lt;number&gt; = [1,2,3]</span><br></pre></td></tr></table></figure>
+<h4 id="杂乱数组"><a href="#杂乱数组" class="headerlink" title="杂乱数组"></a>杂乱数组</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let a1:any[] = [&quot;11&quot;,123,[21,[121]]]</span><br><span class="line">let a2:(string|number) = [11,&quot;1231&quot;,12]</span><br></pre></td></tr></table></figure>
+
+<h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let a1:[number,number]=[1,1]</span><br><span class="line">let a2:[1,string,true] = [1,&quot;2&quot;,true]</span><br></pre></td></tr></table></figure>
+<h4 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let a1:number[][] = [[11,22],[22,33]]</span><br><span class="line">let a2:Array&lt;Array&lt;number&gt;&gt; = [[],[]]</span><br></pre></td></tr></table></figure>
+<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>interface</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//extends继承</span><br><span class="line">interface people &#123;</span><br><span class="line">    gender:number //男 1 女0 未知2</span><br><span class="line">&#125;</span><br><span class="line">interface userInfoFace extends people &#123;</span><br><span class="line">    readonly id:number //只读，不能进行修改</span><br><span class="line">    name:string</span><br><span class="line">    age?:number //说明是可选属性，可赋值可不赋值</span><br><span class="line">    //方法</span><br><span class="line">    getName:()=&gt;string //()是方法参数， string是返回值</span><br><span class="line">    setName:(name:string)=&gt;void</span><br><span class="line">&#125;</span><br><span class="line">let zs:userInfoFace&#123;</span><br><span class="line">    name:&quot;签到&quot;,</span><br><span class="line">    getName:function ():string &#123;</span><br><span class="line">        return this.name  </span><br><span class="line">    &#125;,</span><br><span class="line">    setName:function (name:string):void &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;,</span><br><span class="line">    gender:1</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">//zs.id=2 是不行的</span><br><span class="line">//zs.age=21</span><br><span class="line">console.log(zs.name)</span><br></pre></td></tr></table></figure>
+
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/10/21/typeScript/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-记一次hostwinds服务器退款经历" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/10/08/%E8%AE%B0%E4%B8%80%E6%AC%A1hostwinds%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%80%80%E6%AC%BE%E7%BB%8F%E5%8E%86/">记一次hostwinds服务器退款经历</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2023/10/08/%E8%AE%B0%E4%B8%80%E6%AC%A1hostwinds%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%80%80%E6%AC%BE%E7%BB%8F%E5%8E%86/" class="archive-article-date">
+  	<time datetime="2023-10-08T15:15:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-10-08</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="退款时间-2023-10-8"><a href="#退款时间-2023-10-8" class="headerlink" title="退款时间: 2023.10.8"></a>退款时间: <code>2023.10.8</code></h3><h3 id="记录原因："><a href="#记录原因：" class="headerlink" title="记录原因："></a>记录原因：</h3><blockquote>
+<p>网上有许多退款教程，但我遇到了不一样的情况，所以在退款成功后，对此进行一次记录。</p>
 </blockquote>
         
       
@@ -341,37 +722,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">uniapp</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/10/08/%E8%AE%B0%E4%B8%80%E6%AC%A1hostwinds%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%80%80%E6%AC%BE%E7%BB%8F%E5%8E%86/">展开全文 >></a>
         </p>
       
 
@@ -401,14 +756,14 @@
 
 
   
-    <article id="post-开发中防止忘记的功能和bug点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-使用imewlconverter给Rime添加词库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/09/11/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8Cbug%E7%82%B9/">开发中防止忘记的功能和bug点</a>
+      <a class="article-title" href="/2023/09/01/%E4%BD%BF%E7%94%A8imewlconverter%E7%BB%99Rime%E6%B7%BB%E5%8A%A0%E8%AF%8D%E5%BA%93/">使用imewlconverter给Rime添加词库</a>
     </h1>
   
 
@@ -416,8 +771,8 @@
         
 
 
-<a href="/2022/09/11/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8Cbug%E7%82%B9/" class="archive-article-date">
-  	<time datetime="2022-09-11T12:35:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-11</time>
+<a href="/2023/09/01/%E4%BD%BF%E7%94%A8imewlconverter%E7%BB%99Rime%E6%B7%BB%E5%8A%A0%E8%AF%8D%E5%BA%93/" class="archive-article-date">
+  	<time datetime="2023-09-01T07:24:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-09-01</time>
 </a>
 
 
@@ -427,177 +782,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.需要文章免登录查看，文章可以不需要登录就能看（已处理，修改id表的读取权限，改成了都能read，就能跳过权限）<br>2.登录页面有报错，一键登录退出时有报错（新版本）,登录页面使用原始navigateBar<br>3.其中一个登录页面返回按钮有问题 (已处理，去掉此页面中样式，样式读取了一个css文件，此文件修改了当前页面的格式)<br>4.前面改好后，需要验证发布更新功能,(无法使用更新功能，需要进行debug判断才行)<br>5.数据库数据通过云函数来进行获取<br>4.登录时默认是图片,但打开确实list列表<br>5.list最后出现undefined, 可能和数据库读取有关，新版本遇到的情况。<br>4.其中一个登录页面有两个导航栏（navBar）,应该去掉原生的那个，保留自己的。</p>
-<p>uniapp page.json 页面配置中添加 “navigationStyle”: “custom”，取消原生导航栏<br>navigationStyle导航栏样式，仅支持 default/custom。custom即取消默认的原生导航栏</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/09/11/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8Cbug%E7%82%B9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue2+uniapp+unicloud项目遇到问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/">vue2+uniapp+unicloud项目遇到问题</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2022-05-31T05:36:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-31</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="2022-9-10更新"><a href="#2022-9-10更新" class="headerlink" title="2022-9-10更新"></a>2022-9-10更新</h2><p>我做了一个vue2的app。<br>在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。<br>由于是移动端，所以现在把遇到的一些问题和需求总结下。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">uniapp</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Android平台签名证书(.keystore)生成指南" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/30/Android%E5%B9%B3%E5%8F%B0%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6(.keystore)%E7%94%9F%E6%88%90%E6%8C%87%E5%8D%97/">Android平台签名证书(.keystore)生成指南</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2022/04/30/Android%E5%B9%B3%E5%8F%B0%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6(.keystore)%E7%94%9F%E6%88%90%E6%8C%87%E5%8D%97/" class="archive-article-date">
-  	<time datetime="2022-04-30T14:09:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-30</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Android平台签名证书-keystore-生成指南"><a href="#Android平台签名证书-keystore-生成指南" class="headerlink" title="Android平台签名证书(.keystore)生成指南"></a>Android平台签名证书(.keystore)生成指南</h1><h3 id="Android证书"><a href="#Android证书" class="headerlink" title="Android证书"></a>Android证书</h3><p>Android平台打包发布apk应用，需要使用数字证书（.keystore文件）进行签名，用于表明开发者身份。</p>
-<blockquote>
-<p>Android证书的生成是自助和免费的，不需要审批或付费。</p>
-</blockquote>
-<p>可以使用JRE环境中的keytool命令生成：</p>
-<p>安装JRE环境（推荐使用JRE8环境，如已有可跳过）<br>可从Oracle官方下载jre安装包：<a target="_blank" rel="noopener" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+        <h1 id="使用imewlconverter给Rime添加词库"><a href="#使用imewlconverter给Rime添加词库" class="headerlink" title="使用imewlconverter给Rime添加词库"></a>使用<code>imewlconverter</code>给<code>Rime</code>添加词库</h1><h2 id="1-什么是Rime"><a href="#1-什么是Rime" class="headerlink" title="1 什么是Rime"></a>1 什么是<code>Rime</code></h2><p>Rime 是跨平臺的輸入法軟件，Rime 輸入方案可通用於以下發行版：</p>
         
       
 
@@ -610,7 +795,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/04/30/Android%E5%B9%B3%E5%8F%B0%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6(.keystore)%E7%94%9F%E6%88%90%E6%8C%87%E5%8D%97/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/09/01/%E4%BD%BF%E7%94%A8imewlconverter%E7%BB%99Rime%E6%B7%BB%E5%8A%A0%E8%AF%8D%E5%BA%93/">展开全文 >></a>
         </p>
       
 
@@ -640,14 +825,14 @@
 
 
   
-    <article id="post-获取远程共享文件夹" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-no-matches-found问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/15/%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/">获取远程共享文件夹</a>
+      <a class="article-title" href="/2023/08/31/no-matches-found%E9%97%AE%E9%A2%98/">zsh:no matches found 问题</a>
     </h1>
   
 
@@ -655,8 +840,8 @@
         
 
 
-<a href="/2022/03/15/%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/" class="archive-article-date">
-  	<time datetime="2022-03-15T12:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-15</time>
+<a href="/2023/08/31/no-matches-found%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2023-08-31T08:48:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-31</time>
 </a>
 
 
@@ -666,245 +851,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>windows:<br>调出命令框，说着使用搜索栏<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\\IP地址</span><br><span class="line">例如：</span><br><span class="line">\\192.168.0.1</span><br></pre></td></tr></table></figure>
-<p>mac:<br>finder-&gt;前往-&gt;连接服务器<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ftp://IP地址</span><br><span class="line">例如：</span><br><span class="line">ftp://192.168.0.1</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/15/%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-VSCode-建立多项目工作区" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/">VSCode 建立多项目工作区</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="archive-article-date">
-  	<time datetime="2022-03-03T02:31:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-03</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>调出命令面板或者<code>文件 —&gt; 将文件夹添加到工作区</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//打开命令面板</span><br><span class="line">command+shift+P</span><br><span class="line">//添加项目文件夹</span><br><span class="line">&gt; add folder to workspace</span><br><span class="line">//保存工作空间</span><br><span class="line">&gt; save workspace as...</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vscode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mac-ffmpeg下载配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/">mac ffmpeg下载配置</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2021-11-15T05:42:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-15</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>为了把<code>b站</code>的视频<code>flv</code>格式转换成<code>MP4</code>格式，所以下载<code>ffmpeg</code>用来转换<code>MP4</code>格式.<br>正常下载使用 <code>brew</code>，但不知道为什么一直报错无法下载，最后觉得直接<a target="_blank" rel="noopener" href="https://ffmpeg.org/download.html">官网下载</a>后，配置使用</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bilibili</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ffmpeg</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mac电脑遇到的svn证书验证失败问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/14/mac%E7%94%B5%E8%84%91%E9%81%87%E5%88%B0%E7%9A%84svn%E8%AF%81%E4%B9%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">mac电脑遇到的svn证书验证失败问题</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2021/10/14/mac%E7%94%B5%E8%84%91%E9%81%87%E5%88%B0%E7%9A%84svn%E8%AF%81%E4%B9%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-10-14T01:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-14</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="svn报错：Server-SSL-certificate-verification-failed-certificate-has-expired-issuer-is-not-trusted"><a href="#svn报错：Server-SSL-certificate-verification-failed-certificate-has-expired-issuer-is-not-trusted" class="headerlink" title="svn报错：Server SSL certificate verification failed: certificate has expired, issuer is not trusted"></a>svn报错：Server SSL certificate verification failed: certificate has expired, issuer is not trusted</h1><p>第一次连接svn拉去代码时遇到的问题，原因是https证书验证失败。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>在终端中操作</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#地址请填自己的svn地址</span></span><br><span class="line">svn sl https://svn.xxxxxx/xxxx</span><br></pre></td></tr></table></figure>
-<p>运行后，出现<code>是否需要重新验证</code>,R表示不打算验证，T和P表示临时和总是相信。<br>我们输入<code>P</code>总是相信<br>接下来需要输入账号密码等信息，直接输入svn的账号和密码即可。<br>以上操作完毕，就可以拉去代码了。</p>
+        <h2 id="zsh-no-matches-found"><a href="#zsh-no-matches-found" class="headerlink" title="zsh:no matches found"></a>zsh:no matches found</h2><p>解决方法：<br>打开文件<code>~/.zshrc</code> ，添加内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setopt no_nomatch</span><br></pre></td></tr></table></figure>
+<p>退出文件，更新：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
 
       
 
@@ -918,7 +868,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-svn</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">question</a>
         		</li>
       		
 		</ul>
@@ -928,7 +878,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/14/mac%E7%94%B5%E8%84%91%E9%81%87%E5%88%B0%E7%9A%84svn%E8%AF%81%E4%B9%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/08/31/no-matches-found%E9%97%AE%E9%A2%98/">展开全文 >></a>
         </p>
       
 
@@ -958,14 +908,14 @@
 
 
   
-    <article id="post-mac下载easyconnect软件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-使用mvnd来取代mvn" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/14/mac%E4%B8%8B%E8%BD%BDeasyconnect%E8%BD%AF%E4%BB%B6/">mac下载EasyConnect软件</a>
+      <a class="article-title" href="/2023/07/26/%E4%BD%BF%E7%94%A8mvnd%E6%9D%A5%E5%8F%96%E4%BB%A3mvn/">更快的mvn：mvnd</a>
     </h1>
   
 
@@ -973,8 +923,8 @@
         
 
 
-<a href="/2021/10/14/mac%E4%B8%8B%E8%BD%BDeasyconnect%E8%BD%AF%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2021-10-14T01:10:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-14</time>
+<a href="/2023/07/26/%E4%BD%BF%E7%94%A8mvnd%E6%9D%A5%E5%8F%96%E4%BB%A3mvn/" class="archive-article-date">
+  	<time datetime="2023-07-26T01:25:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-26</time>
 </a>
 
 
@@ -984,11 +934,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>前言<br>许多公司都是需要连接内网来进行开发的，所以需要下载easyConnect软件，但仍然会遇到无法下载的问题，所以记录一下经历</p>
-</blockquote>
-<p>一般公司都会让你发本机的MAC地址（电脑的物理地址），然后帮你开通内网.<br>开通好后，会给你一个<code>vpn.xxx.com</code>的地址，打开这个网址，会检测你电脑是否安装了<code>EasyConnect</code>，如果没有安装则会直接跳转到<code>EasyConnect</code>下载页面。</p>
-<h2 id="如果你没法下载，注意！mac电脑请使用自带的Safari浏览器打开，才能下载mac的安装包"><a href="#如果你没法下载，注意！mac电脑请使用自带的Safari浏览器打开，才能下载mac的安装包" class="headerlink" title="如果你没法下载，注意！mac电脑请使用自带的Safari浏览器打开，才能下载mac的安装包"></a>如果你没法下载，<span style="color:red">注意！mac电脑请使用自带的<code>Safari浏览器</code>打开，才能下载mac的安装包</span></h2>
+        <h1 id="更快的mvn：mvnd"><a href="#更快的mvn：mvnd" class="headerlink" title="更快的mvn：mvnd"></a>更快的mvn：mvnd</h1><h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h2>
+        
       
 
       
@@ -996,33 +943,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/14/mac%E4%B8%8B%E8%BD%BDeasyconnect%E8%BD%AF%E4%BB%B6/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/07/26/%E4%BD%BF%E7%94%A8mvnd%E6%9D%A5%E5%8F%96%E4%BB%A3mvn/">展开全文 >></a>
         </p>
       
 
@@ -1054,7 +979,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1068,7 +993,7 @@
 		<!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 		<script async src="/busuanzi.pure.js"></script>
 		<div class="footer-left">
-    		&copy; 2023 Rayqian
+    		&copy; 2025 Rayqian
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten

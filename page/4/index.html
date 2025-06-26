@@ -220,14 +220,14 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hexo模版yilia添加访问量" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Android平台签名证书(.keystore)生成指南" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/">hexo模版yilia添加不蒜子统计</a>
+      <a class="article-title" href="/2022/04/30/Android%E5%B9%B3%E5%8F%B0%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6(.keystore)%E7%94%9F%E6%88%90%E6%8C%87%E5%8D%97/">Android平台签名证书(.keystore)生成指南</a>
     </h1>
   
 
@@ -235,8 +235,8 @@
         
 
 
-<a href="/2019/10/24/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/" class="archive-article-date">
-  	<time datetime="2019-10-24T09:08:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
+<a href="/2022/04/30/Android%E5%B9%B3%E5%8F%B0%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6(.keystore)%E7%94%9F%E6%88%90%E6%8C%87%E5%8D%97/" class="archive-article-date">
+  	<time datetime="2022-04-30T14:09:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-30</time>
 </a>
 
 
@@ -246,11 +246,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>我使用了<a target="_blank" rel="noopener" href="http://busuanzi.ibruce.info/">不蒜子 - 极简网页计数器</a><br>具体参考可参考<a target="_blank" rel="noopener" href="http://ibruce.info/2015/04/04/busuanzi/">文档</a></p>
+        <h1 id="Android平台签名证书-keystore-生成指南"><a href="#Android平台签名证书-keystore-生成指南" class="headerlink" title="Android平台签名证书(.keystore)生成指南"></a>Android平台签名证书(.keystore)生成指南</h1><h3 id="Android证书"><a href="#Android证书" class="headerlink" title="Android证书"></a>Android证书</h3><p>Android平台打包发布apk应用，需要使用数字证书（.keystore文件）进行签名，用于表明开发者身份。</p>
 <blockquote>
-<h2 id="添加统计文章阅读量"><a href="#添加统计文章阅读量" class="headerlink" title="添加统计文章阅读量"></a>添加统计文章阅读量</h2></blockquote>
-<p>打开<code>themes\yilia\layout\_partial\post\date.ejs</code></p>
-<p>因为我准备把文章阅读量放在文章生成日期的旁边<br>然后在最上面添加如下内容：</p>
+<p>Android证书的生成是自助和免费的，不需要审批或付费。</p>
+</blockquote>
+<p>可以使用JRE环境中的keytool命令生成：</p>
+<p>安装JRE环境（推荐使用JRE8环境，如已有可跳过）<br>可从Oracle官方下载jre安装包：<a target="_blank" rel="noopener" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
         
       
 
@@ -259,37 +260,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/blog//" class="article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/24/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/04/30/Android%E5%B9%B3%E5%8F%B0%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6(.keystore)%E7%94%9F%E6%88%90%E6%8C%87%E5%8D%97/">展开全文 >></a>
         </p>
       
 
@@ -319,14 +294,14 @@
 
 
   
-    <article id="post-不算子统计" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-获取远程共享文件夹" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/">hexo不蒜子统计显示失效</a>
+      <a class="article-title" href="/2022/03/15/%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/">获取远程共享文件夹</a>
     </h1>
   
 
@@ -334,8 +309,79 @@
         
 
 
-<a href="/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/" class="archive-article-date">
-  	<time datetime="2019-10-24T08:57:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
+<a href="/2022/03/15/%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/" class="archive-article-date">
+  	<time datetime="2022-03-15T12:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-15</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>windows:<br>调出命令框，说着使用搜索栏<br>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\\IP地址</span><br><span class="line">例如：</span><br><span class="line">\\192.168.0.1</span><br></pre></td></tr></table></figure>
+<p>mac:<br>finder-&gt;前往-&gt;连接服务器<br>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ftp://IP地址</span><br><span class="line">例如：</span><br><span class="line">ftp://192.168.0.1</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/15/%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-VSCode-建立多项目工作区" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/">VSCode 建立多项目工作区</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/" class="archive-article-date">
+  	<time datetime="2022-03-03T02:31:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-03</time>
 </a>
 
 
@@ -346,13 +392,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>问题：</p>
+<p>p.s. <code>#region</code> and <code>#endregion</code>,vscode,折叠代码用</p>
 </blockquote>
-<p>总是无法显示统计的数据，在浏览器的后台查看，发现<code>&lt;span&gt;</code>标签下面多了个样式<code>style=&quot;display:none&quot;</code>, 因此我所有显示的统计都被隐藏了。</p>
-<blockquote>
-<p>过程：</p>
-</blockquote>
-        
+<p>调出命令面板或者<code>文件 —&gt; 将文件夹添加到工作区</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//打开命令面板</span><br><span class="line">command+shift+P</span><br><span class="line">//添加项目文件夹</span><br><span class="line">&gt; add folder to workspace</span><br><span class="line">//保存工作空间</span><br><span class="line">&gt; save workspace as...</span><br></pre></td></tr></table></figure>
       
 
       
@@ -365,36 +408,17 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bug</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vscode</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology/blog//" class="article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/24/%E4%B8%8D%E7%AE%97%E5%AD%90%E7%BB%9F%E8%AE%A1/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/03/03/VSCode-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E5%8C%BA/">展开全文 >></a>
         </p>
       
 
@@ -424,14 +448,14 @@
 
 
   
-    <article id="post-添加gitment评论区" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-mac-ffmpeg下载配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/%E6%B7%BB%E5%8A%A0gitment%E8%AF%84%E8%AE%BA%E5%8C%BA/">hexo添加gitment评论区(+评论区汉化)</a>
+      <a class="article-title" href="/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/">mac ffmpeg下载配置</a>
     </h1>
   
 
@@ -439,8 +463,8 @@
         
 
 
-<a href="/2019/10/24/%E6%B7%BB%E5%8A%A0gitment%E8%AF%84%E8%AE%BA%E5%8C%BA/" class="archive-article-date">
-  	<time datetime="2019-10-24T06:51:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
+<a href="/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2021-11-15T05:42:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-15</time>
 </a>
 
 
@@ -450,8 +474,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网上有很多，如果是hexo blog 直接看<a target="_blank" rel="noopener" href="https://joeybling.github.io/yilia-plus-demo/2019/07/24/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90Gitment%E8%AF%84%E8%AE%BA/">hexo集成Gitment</a>这一个就可以了。<br><strong>主要说明的是每+篇新的文章评论区都需要初始化：</strong><br>（这个挺麻烦的）</p>
-<p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮，之后其他用户即可在该页面发表评论。</p>
+        <p>为了把<code>b站</code>的视频<code>flv</code>格式转换成<code>MP4</code>格式，所以下载<code>ffmpeg</code>用来转换<code>MP4</code>格式.<br>正常下载使用 <code>brew</code>，但不知道为什么一直报错无法下载，最后觉得直接<a target="_blank" rel="noopener" href="https://ffmpeg.org/download.html">官网下载</a>后，配置使用</p>
         
       
 
@@ -465,36 +488,21 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bilibili</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology/blog//" class="article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/24/%E6%B7%BB%E5%8A%A0gitment%E8%AF%84%E8%AE%BA%E5%8C%BA/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/11/15/mac-ffmpeg%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE/">展开全文 >></a>
         </p>
       
 
@@ -524,14 +532,14 @@
 
 
   
-    <article id="post-hexo添加看板娘(使用)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-mac电脑遇到的svn证书验证失败问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98(%E4%BD%BF%E7%94%A8)/">hexo添加看板娘(使用官方文档方式)</a>
+      <a class="article-title" href="/2021/10/14/mac%E7%94%B5%E8%84%91%E9%81%87%E5%88%B0%E7%9A%84svn%E8%AF%81%E4%B9%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">mac电脑遇到的svn证书验证失败问题</a>
     </h1>
   
 
@@ -539,8 +547,91 @@
         
 
 
-<a href="/2019/10/23/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98(%E4%BD%BF%E7%94%A8)/" class="archive-article-date">
-  	<time datetime="2019-10-23T09:34:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
+<a href="/2021/10/14/mac%E7%94%B5%E8%84%91%E9%81%87%E5%88%B0%E7%9A%84svn%E8%AF%81%E4%B9%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2021-10-14T01:33:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-14</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="svn报错：Server-SSL-certificate-verification-failed-certificate-has-expired-issuer-is-not-trusted"><a href="#svn报错：Server-SSL-certificate-verification-failed-certificate-has-expired-issuer-is-not-trusted" class="headerlink" title="svn报错：Server SSL certificate verification failed: certificate has expired, issuer is not trusted"></a>svn报错：Server SSL certificate verification failed: certificate has expired, issuer is not trusted</h1><p>第一次连接svn拉去代码时遇到的问题，原因是https证书验证失败。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>在终端中操作</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#地址请填自己的svn地址</span></span><br><span class="line">svn sl https://svn.xxxxxx/xxxx</span><br></pre></td></tr></table></figure>
+<p>运行后，出现<code>是否需要重新验证</code>,R表示不打算验证，T和P表示临时和总是相信。<br>我们输入<code>P</code>总是相信<br>接下来需要输入账号密码等信息，直接输入svn的账号和密码即可。<br>以上操作完毕，就可以拉去代码了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-svn</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/10/14/mac%E7%94%B5%E8%84%91%E9%81%87%E5%88%B0%E7%9A%84svn%E8%AF%81%E4%B9%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-mac下载easyconnect软件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/14/mac%E4%B8%8B%E8%BD%BDeasyconnect%E8%BD%AF%E4%BB%B6/">mac下载EasyConnect软件</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2021/10/14/mac%E4%B8%8B%E8%BD%BDeasyconnect%E8%BD%AF%E4%BB%B6/" class="archive-article-date">
+  	<time datetime="2021-10-14T01:10:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-14</time>
 </a>
 
 
@@ -551,9 +642,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>先在说前头，在我写完这篇文章后，出现了一个报错，无法编译无法启动。</p>
+<p>前言<br>许多公司都是需要连接内网来进行开发的，所以需要下载easyConnect软件，但仍然会遇到无法下载的问题，所以记录一下经历</p>
 </blockquote>
-        
+<p>一般公司都会让你发本机的MAC地址（电脑的物理地址），然后帮你开通内网.<br>开通好后，会给你一个<code>vpn.xxx.com</code>的地址，打开这个网址，会检测你电脑是否安装了<code>EasyConnect</code>，如果没有安装则会直接跳转到<code>EasyConnect</code>下载页面。</p>
+<h2 id="如果你没法下载，注意！mac电脑请使用自带的Safari浏览器打开，才能下载mac的安装包"><a href="#如果你没法下载，注意！mac电脑请使用自带的Safari浏览器打开，才能下载mac的安装包" class="headerlink" title="如果你没法下载，注意！mac电脑请使用自带的Safari浏览器打开，才能下载mac的安装包"></a>如果你没法下载，<span style="color:red">注意！mac电脑请使用自带的<code>Safari浏览器</code>打开，才能下载mac的安装包</span></h2>
       
 
       
@@ -566,11 +658,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Live2D</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-技术</a>
         		</li>
       		
 		</ul>
@@ -582,7 +670,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/blog//" class="article-tag-list-link color5">blog</a>
+        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
         		</li>
       		
 		</ul>
@@ -591,7 +679,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/23/hexo%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98(%E4%BD%BF%E7%94%A8)/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/10/14/mac%E4%B8%8B%E8%BD%BDeasyconnect%E8%BD%AF%E4%BB%B6/">展开全文 >></a>
         </p>
       
 
@@ -621,14 +709,14 @@
 
 
   
-    <article id="post-XAMPP-VM数据库MariaDB使用其他工具连接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-win10-sourcetree跳过注册(版本3.4.6.0)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/19/XAMPP-VM%E6%95%B0%E6%8D%AE%E5%BA%93MariaDB%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5/">XAMPP-VM数据库MariaDB使用其他工具连接</a>
+      <a class="article-title" href="/2021/09/13/win10-sourcetree%E8%B7%B3%E8%BF%87%E6%B3%A8%E5%86%8C(%E7%89%88%E6%9C%AC3.4.6.0)/">win10 sourcetree跳过注册(版本3.4.6.0)</a>
     </h1>
   
 
@@ -636,8 +724,8 @@
         
 
 
-<a href="/2019/10/19/XAMPP-VM%E6%95%B0%E6%8D%AE%E5%BA%93MariaDB%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5/" class="archive-article-date">
-  	<time datetime="2019-10-19T07:21:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-19</time>
+<a href="/2021/09/13/win10-sourcetree%E8%B7%B3%E8%BF%87%E6%B3%A8%E5%86%8C(%E7%89%88%E6%9C%AC3.4.6.0)/" class="archive-article-date">
+  	<time datetime="2021-09-13T02:20:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-13</time>
 </a>
 
 
@@ -647,11 +735,99 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&emsp;&emsp;使用<code>XAMPP-VM</code>出现问题，但网上搜索答案，大部分都不带<code>VM</code>的。</p>
-<blockquote>
-<p>&emsp;&emsp;首先我遇到了一个问题，到最后也无法解决，只能卸载重新装了个XAMPP-VM。<br>基本情况是：有很长一段时间都没有打开<code>XAMPP-VM</code>, 然后再次打开连数据库后报错。</p>
+        <blockquote>
+<p>文章参考了酷极和的文章<a target="_blank" rel="noopener" href="https://www.cnblogs.com/daizhongxing/p/12251672.html">Windows10 下安装SourceTree 跳过注册 Bitbucket</a>，主要是用来记录下自己这边的操作。</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Access denied for user &#x27;root&#x27;@&#x27;localhost&#x27; </span><br><span class="line">(using password: YES/NO)</span><br></pre></td></tr></table></figure>
+<p>首先在官网下载好最新版之后（2021-9-13最新版是3.4.6），安装。</p>
+<p>不要打开程序，先改配置<br><code>C:\Users\当前用户文件夹\AppData\Local\Atlassian\SourceTree</code>添加文件<code>accounts.json</code>，添加内容如下</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Api.Host.Identity.Model.IdentityAccount, SourceTree.Api.Host.Identity&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;Authenticate&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;HostInstance&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;2&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Host.Atlassianaccount.AtlassianAccountInstance, SourceTree.Host.AtlassianAccount&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Host&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;3&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Host.Atlassianaccount.AtlassianAccountHost, SourceTree.Host.AtlassianAccount&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;Id&quot;</span>: <span class="string">&quot;atlassian account&quot;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">&quot;BaseUrl&quot;</span>: <span class="string">&quot;https://id.atlassian.com/&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;Credentials&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;4&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Model.BasicAuthCredentials, SourceTree.Api.Account&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Username&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Email&quot;</span>: <span class="literal">null</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;IsDefault&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>然后修改文件<code>C:\Users\当前用户文件夹\AppData\Local\Atlassian\SourceTree.exe_Url_xxxxxxxx\3.4.6.0\user.config</code>，内容如下</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;setting name=<span class="string">&quot;AgreedToEULA&quot;</span> serializeAs=<span class="string">&quot;String&quot;</span>&gt;</span><br><span class="line">        &lt;value&gt;True&lt;/value&gt;</span><br><span class="line">&lt;/setting&gt;</span><br><span class="line">&lt;setting name=<span class="string">&quot;AgreedToEULAVersion&quot;</span> serializeAs=<span class="string">&quot;String&quot;</span>&gt;</span><br><span class="line">        &lt;value&gt;<span class="number">20160201</span>&lt;/value&gt;</span><br><span class="line">&lt;/setting&gt;</span><br></pre></td></tr></table></figure>
+
+<p>然后启动既可以了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SourceTree</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/09/13/win10-sourcetree%E8%B7%B3%E8%BF%87%E6%B3%A8%E5%86%8C(%E7%89%88%E6%9C%AC3.4.6.0)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-uPic+gitee图床" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/">图片上传工具（uPic 图床 + 阿里云oss）(Gitee废弃)</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/" class="archive-article-date">
+  	<time datetime="2021-08-18T08:37:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-18</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="2022年4月17日-说明："><a href="#2022年4月17日-说明：" class="headerlink" title="2022年4月17日  说明："></a>2022年4月17日  说明：</h1><p><font color="red">目前<code>gitee</code>启用了防盗用链，所以无法再作为图床，而<code>github</code>在国内有时候不是很顺畅，所以我改用了<code>阿里云oss</code>对象存储，来作为图床，一年9元人民币，一个人用我觉得应该还是没问题的，后续遇到问题再说吧。<br></font></p>
+<p>文章主要使用了这个作者写的<a target="_blank" rel="noopener" href="https://blog.svend.cc/upic/tutorials/gitee/">uPic 图床配置教程 - 码云(Gitee)
+</a>，自己在这里记录主要是为了留个备份。</p>
+<h2 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h2>
         
       
 
@@ -665,11 +841,208 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">XAMPP-VM</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">uPic</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MariaDB</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">gitee</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">阿里云oss</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-mac-iterm2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/18/mac-iterm2/">mac iterm2配置ssh连接</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2021/08/18/mac-iterm2/" class="archive-article-date">
+  	<time datetime="2021-08-18T06:44:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-18</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先先测试下，在<code>iterm</code>中输入命令<code>ssh -p$port root@$host</code>查看是否能连接到服务器</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-p后面跟端口号，@后面跟地址</span></span><br><span class="line"><span class="variable">$ssh</span> -p22 root@101.102.03.04</span><br></pre></td></tr></table></figure>
+<p><strong>如果没问题，则开始配置</strong></p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ssh</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">item2</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/18/mac-iterm2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-判断IE版本" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/13/%E5%88%A4%E6%96%ADIE%E7%89%88%E6%9C%AC/">使用Navigator判断IE版本</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2021/08/13/%E5%88%A4%E6%96%ADIE%E7%89%88%E6%9C%AC/" class="archive-article-date">
+  	<time datetime="2021-08-13T01:12:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-13</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>F12控制台输入<code>navigator</code></li>
+<li><code>appName</code>参数，值<code>Netscape</code>表示<code>IE11</code>，<code>Microsoft Internet Explorer</code>表示为其他版本。</li>
+<li><code>appVersion</code>参数，值中包含<code>MISE</code>说明使用的是<strong>使用IE10及以下版本</strong>，如果没有包含说明是<code>IE11</code>。</li>
+<li></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -690,493 +1063,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/19/XAMPP-VM%E6%95%B0%E6%8D%AE%E5%BA%93MariaDB%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-python3-django-Heroku-命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/01/python3-django-Heroku-%E5%91%BD%E4%BB%A4/">python3 django Heroku 命令</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2019/10/01/python3-django-Heroku-%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2019-10-01T09:19:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-01</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本地测试运行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">heroku local</span><br></pre></td></tr></table></figure>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Django</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Heroku</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/01/python3-django-Heroku-%E5%91%BD%E4%BB%A4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python3建立虚拟环境" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/20/Python3%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">Python3建立虚拟环境</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2019/09/20/Python3%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" class="archive-article-date">
-  	<time datetime="2019-09-19T23:10:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先创建一个文件夹，如：books</p>
-<ul>
-<li>先切换到books目录下，使用python3<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> books </span><br><span class="line">$ Python3 -m venv xxx</span><br></pre></td></tr></table></figure>
-<code>xxx</code>表示的是你准备创建的文件名, 如果与当前目录（books）名称相同, 那么接下来安装的文件都会放在同一个目录下
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Django</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Python3</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/20/Python3%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-v2ray遇到了问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/12/v2ray%E9%81%87%E5%88%B0%E4%BA%86%E9%97%AE%E9%A2%98/">v2ray遇到了问题,突然连不上了</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2019/09/12/v2ray%E9%81%87%E5%88%B0%E4%BA%86%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2019-09-12T05:56:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="2021-08-26更新"><a href="#2021-08-26更新" class="headerlink" title="2021.08.26更新"></a>2021.08.26更新</h3><p>发现修改好端口后，重启服务器报错<br><img src="https://gitee.com/qianlei6148/pictures-of-the-warehouse/raw/master/uPic/202108/20210826KjovTk.png" alt="报错信息"><br>报错：<code>Job for v2ray.service failed. See &quot;systemctl status v2ray.service&quot; and &quot;journalctl -xe&quot; for details.</code><br>原因是配置文件内容出错了<code>config.json</code>，使用命令检查文件<code>jq . config.json</code>(<code>jq</code>是官方推荐的,可以用来校验<code>config.json</code>文件格式的工具)，显示全部内容说明格式没问题，那么就是里面具体的配置错了，使用<code>vi config.json</code>打开文件后仔细检查，终于发现原来是因为配置的多个端口，其中有两个端口号是一样的，也就是说一个端口被占用了，另一个还想使用这个端口，所以导致无法启动或者重启服务。</p>
-<h5 id="P-S-bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下"><a href="#P-S-bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下" class="headerlink" title="P.S.bing搜索中可以看到这个报错基本都是配置文件导致的，例如启动docker、nginx等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下"></a>P.S.<code>bing</code>搜索中可以看到这个报错基本都是配置文件导致的，例如启动<code>docker</code>、<code>nginx</code>等，当然也有其他的，比如你写在配置文件中的端口被别的应用给占了，这个时候就需要你另外处理，具体原因具体分析，也可以直接把问题搜索一下</h5><hr>
-<h3 id="以前"><a href="#以前" class="headerlink" title="以前"></a>以前</h3><p>&emsp;&emsp;今天, 发现vpn无法连接, google总是打不开, 甚至连搬瓦工的地址也无法打开.</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">question</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">v2ray</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/翻墙//" class="article-tag-list-link color3">翻墙</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/12/v2ray%E9%81%87%E5%88%B0%E4%BA%86%E9%97%AE%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-安装cordova和ionic" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/">安装cordova和ionic</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/" class="archive-article-date">
-  	<time datetime="2019-06-11T13:47:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-11</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/baymaxlily/article/details/52948777">安装<code>cordova</code>和<code>ionic</code></a></p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cordova ionic@<span class="number">3</span>.<span class="number">16</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">phone</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ionic</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">cordova</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/06/11/%E5%AE%89%E8%A3%85cordova%E5%92%8Cionic/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-科学上网" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/10/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">使用v2ray科学上网所遇到的问题</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2018/11/10/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" class="archive-article-date">
-  	<time datetime="2018-11-10T04:29:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-10</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="#title">前言</a><br><a href="#first">第一部分 20Gkvm的vps和10Gkvm的vps</a><br><a href="#second">第二部分 安装v2ray时遇到的问题</a></p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">v2ray</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/翻墙//" class="article-tag-list-link color3">翻墙</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/11/10/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/08/13/%E5%88%A4%E6%96%ADIE%E7%89%88%E6%9C%AC/">展开全文 >></a>
         </p>
       
 
@@ -1208,7 +1095,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1222,7 +1109,7 @@
 		<!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 		<script async src="/busuanzi.pure.js"></script>
 		<div class="footer-left">
-    		&copy; 2023 Rayqian
+    		&copy; 2025 Rayqian
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten

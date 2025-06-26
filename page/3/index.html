@@ -220,14 +220,14 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-win10-sourcetree跳过注册(版本3.4.6.0)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-maven、npm配置仓库账号密码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/13/win10-sourcetree%E8%B7%B3%E8%BF%87%E6%B3%A8%E5%86%8C(%E7%89%88%E6%9C%AC3.4.6.0)/">win10 sourcetree跳过注册(版本3.4.6.0)</a>
+      <a class="article-title" href="/2023/07/21/maven%E3%80%81npm%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">maven、npm配置仓库账号密码</a>
     </h1>
   
 
@@ -235,8 +235,8 @@
         
 
 
-<a href="/2021/09/13/win10-sourcetree%E8%B7%B3%E8%BF%87%E6%B3%A8%E5%86%8C(%E7%89%88%E6%9C%AC3.4.6.0)/" class="archive-article-date">
-  	<time datetime="2021-09-13T02:20:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-13</time>
+<a href="/2023/07/21/maven%E3%80%81npm%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/" class="archive-article-date">
+  	<time datetime="2023-07-21T02:46:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-21</time>
 </a>
 
 
@@ -247,16 +247,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>文章参考了酷极和的文章<a target="_blank" rel="noopener" href="https://www.cnblogs.com/daizhongxing/p/12251672.html">Windows10 下安装SourceTree 跳过注册 Bitbucket</a>，主要是用来记录下自己这边的操作。</p>
+<p>java、vue前端等应用开发时，如果公司的私有依赖库关闭匿名访问，则需要先配置账号密码才能获取依赖资源，java应用需要配置maven账号密码，vue前端应用需要配置npm账号密码，配置方式如下：</p>
 </blockquote>
-<p>首先在官网下载好最新版之后（2021-9-13最新版是3.4.6），安装。</p>
-<p>不要打开程序，先改配置<br><code>C:\Users\当前用户文件夹\AppData\Local\Atlassian\SourceTree</code>添加文件<code>accounts.json</code>，添加内容如下</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Api.Host.Identity.Model.IdentityAccount, SourceTree.Api.Host.Identity&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;Authenticate&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;HostInstance&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;2&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Host.Atlassianaccount.AtlassianAccountInstance, SourceTree.Host.AtlassianAccount&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Host&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;3&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Host.Atlassianaccount.AtlassianAccountHost, SourceTree.Host.AtlassianAccount&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;Id&quot;</span>: <span class="string">&quot;atlassian account&quot;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">&quot;BaseUrl&quot;</span>: <span class="string">&quot;https://id.atlassian.com/&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;Credentials&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;$id&quot;</span>: <span class="string">&quot;4&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;$type&quot;</span>: <span class="string">&quot;SourceTree.Model.BasicAuthCredentials, SourceTree.Api.Account&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Username&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Email&quot;</span>: <span class="literal">null</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;IsDefault&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>然后修改文件<code>C:\Users\当前用户文件夹\AppData\Local\Atlassian\SourceTree.exe_Url_xxxxxxxx\3.4.6.0\user.config</code>，内容如下</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;setting name=<span class="string">&quot;AgreedToEULA&quot;</span> serializeAs=<span class="string">&quot;String&quot;</span>&gt;</span><br><span class="line">        &lt;value&gt;True&lt;/value&gt;</span><br><span class="line">&lt;/setting&gt;</span><br><span class="line">&lt;setting name=<span class="string">&quot;AgreedToEULAVersion&quot;</span> serializeAs=<span class="string">&quot;String&quot;</span>&gt;</span><br><span class="line">        &lt;value&gt;<span class="number">20160201</span>&lt;/value&gt;</span><br><span class="line">&lt;/setting&gt;</span><br></pre></td></tr></table></figure>
-
-<p>然后启动既可以了。</p>
-
+        
       
 
       
@@ -269,7 +262,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">SourceTree</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
         		</li>
       		
 		</ul>
@@ -279,7 +272,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/09/13/win10-sourcetree%E8%B7%B3%E8%BF%87%E6%B3%A8%E5%86%8C(%E7%89%88%E6%9C%AC3.4.6.0)/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/07/21/maven%E3%80%81npm%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">展开全文 >></a>
         </p>
       
 
@@ -309,14 +302,14 @@
 
 
   
-    <article id="post-uPic+gitee图床" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-mac-fm2023-美化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/">图片上传工具（uPic 图床 + 阿里云oss）(Gitee废弃)</a>
+      <a class="article-title" href="/2023/06/19/mac-fm2023-%E7%BE%8E%E5%8C%96/">mac fm2023 美化</a>
     </h1>
   
 
@@ -324,8 +317,8 @@
         
 
 
-<a href="/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/" class="archive-article-date">
-  	<time datetime="2021-08-18T08:37:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-18</time>
+<a href="/2023/06/19/mac-fm2023-%E7%BE%8E%E5%8C%96/" class="archive-article-date">
+  	<time datetime="2023-06-19T02:24:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-19</time>
 </a>
 
 
@@ -335,10 +328,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="2022年4月17日-说明："><a href="#2022年4月17日-说明：" class="headerlink" title="2022年4月17日  说明："></a>2022年4月17日  说明：</h1><p><font color="red">目前<code>gitee</code>启用了防盗用链，所以无法再作为图床，而<code>github</code>在国内有时候不是很顺畅，所以我改用了<code>阿里云oss</code>对象存储，来作为图床，一年9元人民币，一个人用我觉得应该还是没问题的，后续遇到问题再说吧。<br></font></p>
-<p>文章主要使用了这个作者写的<a target="_blank" rel="noopener" href="https://blog.svend.cc/upic/tutorials/gitee/">uPic 图床配置教程 - 码云(Gitee)
-</a>，自己在这里记录主要是为了留个备份。</p>
-<h2 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h2>
+        <blockquote>
+<p>下载完fm后,想放入头像和logo,但网上基本都是windows的<br>试了很多次，终于成功了，文件存放如下</p>
+</blockquote>
         
       
 
@@ -352,36 +344,17 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">uPic</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">gitee</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">阿里云oss</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">game</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/08/18/uPic+gitee%E5%9B%BE%E5%BA%8A/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/06/19/mac-fm2023-%E7%BE%8E%E5%8C%96/">展开全文 >></a>
         </p>
       
 
@@ -411,14 +384,14 @@
 
 
   
-    <article id="post-mac-iterm2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-JS判断" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/18/mac-iterm2/">mac iterm2配置ssh连接</a>
+      <a class="article-title" href="/2023/05/10/JS%E5%88%A4%E6%96%AD/">JS判断undefined和null和空字符串</a>
     </h1>
   
 
@@ -426,8 +399,8 @@
         
 
 
-<a href="/2021/08/18/mac-iterm2/" class="archive-article-date">
-  	<time datetime="2021-08-18T06:44:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-18</time>
+<a href="/2023/05/10/JS%E5%88%A4%E6%96%AD/" class="archive-article-date">
+  	<time datetime="2023-05-10T09:32:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-10</time>
 </a>
 
 
@@ -437,109 +410,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>首先先测试下，在<code>iterm</code>中输入命令<code>ssh -p$port root@$host</code>查看是否能连接到服务器</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-p后面跟端口号，@后面跟地址</span></span><br><span class="line"><span class="variable">$ssh</span> -p22 root@101.102.03.04</span><br></pre></td></tr></table></figure>
-<p><strong>如果没问题，则开始配置</strong></p>
-        
-      
+        <p>一般新人会这样写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (data!=<span class="literal">null</span> &amp;&amp; <span class="keyword">typeof</span>(data)!=<span class="literal">undefined</span> &amp;&amp; $.trim(data) != <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ssh</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">item2</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/08/18/mac-iterm2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-判断IE版本" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/13/%E5%88%A4%E6%96%ADIE%E7%89%88%E6%9C%AC/">使用Navigator判断IE版本</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2021/08/13/%E5%88%A4%E6%96%ADIE%E7%89%88%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2021-08-13T01:12:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-13</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>F12控制台输入<code>navigator</code></li>
-<li><code>appName</code>参数，值<code>Netscape</code>表示<code>IE11</code>，<code>Microsoft Internet Explorer</code>表示为其他版本。</li>
-<li><code>appVersion</code>参数，值中包含<code>MISE</code>说明使用的是<strong>使用IE10及以下版本</strong>，如果没有包含说明是<code>IE11</code>。</li>
-<li></li>
-</ul>
+<p>其实可以这么写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//判断是undefined\null\空字符串</span></span><br><span class="line"><span class="keyword">if</span> (!data)</span><br><span class="line"><span class="comment">//判断不是undefined\null\空字符串</span></span><br><span class="line"><span class="keyword">if</span> (!!data)</span><br></pre></td></tr></table></figure>
 
       
 
@@ -574,7 +449,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/08/13/%E5%88%A4%E6%96%ADIE%E7%89%88%E6%9C%AC/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/05/10/JS%E5%88%A4%E6%96%AD/">展开全文 >></a>
         </p>
       
 
@@ -604,14 +479,14 @@
 
 
   
-    <article id="post-java后台调用打印机打印" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-excel导入csv" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/26/java%E5%90%8E%E5%8F%B0%E8%B0%83%E7%94%A8%E6%89%93%E5%8D%B0%E6%9C%BA%E6%89%93%E5%8D%B0/">java jdk8 后台调用打印机来打印pdf文件</a>
+      <a class="article-title" href="/2023/04/23/excel%E5%AF%BC%E5%85%A5csv/">excel导入csv</a>
     </h1>
   
 
@@ -619,8 +494,8 @@
         
 
 
-<a href="/2021/07/26/java%E5%90%8E%E5%8F%B0%E8%B0%83%E7%94%A8%E6%89%93%E5%8D%B0%E6%9C%BA%E6%89%93%E5%8D%B0/" class="archive-article-date">
-  	<time datetime="2021-07-26T05:35:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-26</time>
+<a href="/2023/04/23/excel%E5%AF%BC%E5%85%A5csv/" class="archive-article-date">
+  	<time datetime="2023-04-23T07:39:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-23</time>
 </a>
 
 
@@ -630,14 +505,85 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网上搜了很多，基本上用到的类都差不多，但把代码拷过来却发现明明就打印一页pdf，打印机却打出了3张而且内容也全是乱码（<strong>打出乱码问题大概知道了原因：是因为打印机不支持pdf文件打印</strong>）。</p>
-<h3 id="重要：遇到了2个问题："><a href="#重要：遇到了2个问题：" class="headerlink" title="重要：遇到了2个问题："></a>重要：遇到了2个问题：</h3><blockquote>
-<ul>
-<li>1 使用下面的代码遇到了一个问题，在使用<code>HP laserjet M401d</code>打印机没有立即不打印，打印机上面显示”将介质装入纸盒1，普通纸 信封C4或按OK使用可用介质”，按了打印机上面的<code>ok</code>按钮后才打印，这个问题需要给打印机设置<code>任何材质打印</code>。</li>
-<li>2 后台代码报错以及打印出来二进制的乱码：<code>sun.print.PrintJobFlavorException: invalid flavor</code>，我设置的是<code>DocFlavor flavor = DocFlavor.INPUT_STREAM.PDF;</code>根据网上查证，是因为打印机不支持pdf格式，而且在程序里面设置<code>AUTOSENSE</code>打印出来就是乱码了，可能是因为这个打印机是用来打印小票的。解决方法是把文件转成<code>JPEG</code>格式再打印出来。</li>
-</ul>
+        <h2 id="EXCEL导入csv信息"><a href="#EXCEL导入csv信息" class="headerlink" title="EXCEL导入csv信息"></a>EXCEL导入csv信息</h2><p>由于csv文件直接用excel打开可能会有编码问题，会出现乱码，所以需要导入到excel</p>
+<p> Excel -&gt; 执行”数据”-&gt;”自文本” -&gt; 选择 CSV 文件，出现文本导入向导 -&gt; 选择”分隔符号”，下一步 -&gt; 勾选”逗号”，下一步，完成 -&gt; 在“导入数据”对话框里，直接点”确定”</p>
+<p>tips：本人使用mac，需要选择字体，选择UTF-8</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/04/23/excel%E5%AF%BC%E5%85%A5csv/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-git提交规范 Commitizen" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/02/27/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83%20Commitizen/">git提交规范 Commitizen</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2023/02/27/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83%20Commitizen/" class="archive-article-date">
+  	<time datetime="2023-02-27T02:40:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-02-27</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="git提交规范-Commitizen"><a href="#git提交规范-Commitizen" class="headerlink" title="git提交规范 Commitizen"></a>git提交规范 Commitizen</h2><p>   Commitizen是一个撰写符合上面Commit Message标准的一款工具，可以帮助开发者提交符合规范的Commit Message。</p>
+<blockquote>
+<p>安装</p>
 </blockquote>
-        
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装提交</span><br><span class="line">npm install commitizen -g</span><br><span class="line"># 安装规范</span><br><span class="line">npm install -g cz-conventional-changelog</span><br></pre></td></tr></table></figure>
+
+<p>安装好后，使用<code>cz</code>，<code>git cz</code>或者<code>git-cz</code> 来取代<code>git commit</code></p>
+
       
 
       
@@ -650,7 +596,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -662,7 +608,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
+        			<a href="/categories/tool//" class="article-tag-list-link color5">tool</a>
         		</li>
       		
 		</ul>
@@ -671,7 +617,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/07/26/java%E5%90%8E%E5%8F%B0%E8%B0%83%E7%94%A8%E6%89%93%E5%8D%B0%E6%9C%BA%E6%89%93%E5%8D%B0/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/02/27/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83%20Commitizen/">展开全文 >></a>
         </p>
       
 
@@ -701,14 +647,14 @@
 
 
   
-    <article id="post-更新node" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-vim模式-中英文切换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/19/%E6%9B%B4%E6%96%B0node/">更新node</a>
+      <a class="article-title" href="/2023/02/23/vim%E6%A8%A1%E5%BC%8F-%E4%B8%AD%E8%8B%B1%E6%96%87%E5%88%87%E6%8D%A2/">vim模式 输入法中英文切换</a>
     </h1>
   
 
@@ -716,8 +662,8 @@
         
 
 
-<a href="/2021/07/19/%E6%9B%B4%E6%96%B0node/" class="archive-article-date">
-  	<time datetime="2021-07-19T02:01:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-19</time>
+<a href="/2023/02/23/vim%E6%A8%A1%E5%BC%8F-%E4%B8%AD%E8%8B%B1%E6%96%87%E5%88%87%E6%8D%A2/" class="archive-article-date">
+  	<time datetime="2023-02-23T02:54:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-02-23</time>
 </a>
 
 
@@ -727,8 +673,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="使用n更新和切换node"><a href="#使用n更新和切换node" class="headerlink" title="使用n更新和切换node"></a>使用n更新和切换node</h2><h3 id="1-windows-更新node"><a href="#1-windows-更新node" class="headerlink" title="1.windows 更新node"></a>1.windows 更新node</h3><p>如果是windows, 那就请到node官网下载windows最新安装包来覆盖之前的node即可。<br>切换,可以使用 <code>n</code> 工具,和下面是一样的</p>
-<h3 id="2-mac-linux-更新-切换-node"><a href="#2-mac-linux-更新-切换-node" class="headerlink" title="2.mac/linux 更新/切换 node"></a>2.mac/linux 更新/切换 node</h3><p>如果是mac/linux, 直接打开控制台<br>**我使用的时候会报权限问题,所以以下的命令除了查看版本号之外,其余的我都使用<code>sudo n</code>来进行 **</p>
+        <blockquote>
+<p>最近开始频繁的使用vim模式，但有一种情况让我很难受，那就是当我使用拼音写完注释后，切回vim-normal模式时，输入法仍然是中文，每次都要再次切到中文，特别是在客户领导在旁边催你进度时尤为明显。<br>最近在刷b站时碰巧刷到一个up的视频，终于找到一个解决方案，vim_mode我会在vscode、iterm2和idea中都会用到，所以改变输入法是最好的选择<br>备注来源：b站up主 阿崔cxr</p>
+</blockquote>
+<h1 id="Rime-Squirrel-鼠须管输入法"><a href="#Rime-Squirrel-鼠须管输入法" class="headerlink" title="Rime Squirrel 鼠须管输入法"></a>Rime Squirrel 鼠须管输入法</h1>
         
       
 
@@ -742,28 +690,17 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/07/19/%E6%9B%B4%E6%96%B0node/">展开全文 >></a>
+          <a class="article-more-a" href="/2023/02/23/vim%E6%A8%A1%E5%BC%8F-%E4%B8%AD%E8%8B%B1%E6%96%87%E5%88%87%E6%8D%A2/">展开全文 >></a>
         </p>
       
 
@@ -793,14 +730,14 @@
 
 
   
-    <article id="post-Vue项目创建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-macvim-安装配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/31/Vue%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA/">Vue项目创建</a>
+      <a class="article-title" href="/2022/11/06/macvim-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">macvim和tmux 安装配置</a>
     </h1>
   
 
@@ -808,8 +745,8 @@
         
 
 
-<a href="/2020/08/31/Vue%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2020-08-31T01:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-31</time>
+<a href="/2022/11/06/macvim-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2022-11-06T08:42:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-06</time>
 </a>
 
 
@@ -819,10 +756,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-创建项目"><a href="#1-创建项目" class="headerlink" title="1.创建项目"></a>1.创建项目</h2><p>在默认配置都有的情况下：<br>vue init webpack 项目名称<br>cd 项目<br>npm install<br>npm run lint – –fix<br>npm run dev</p>
-<p>feature/ELIM-16’ into ‘hotfix/1.3.1’ in 2020-09-07 16:34:22</p>
-<h2 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h2><p>报错“ vue-cli · connect ECONNREFUSED ”<br>cnpm -v<br>查看到prefix=/usr/local,<br>于是 npm config set prefix=/usr/local 设置下<br>最后vue list 查看到</p>
-
+        <h1 id="macvim-和-tmux-安装"><a href="#macvim-和-tmux-安装" class="headerlink" title="macvim 和 tmux 安装"></a>macvim 和 tmux 安装</h1>
+        
       
 
       
@@ -835,32 +770,21 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tmux</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/31/Vue%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/11/06/macvim-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">展开全文 >></a>
         </p>
       
 
@@ -890,14 +814,14 @@
 
 
   
-    <article id="post--侦探们的侦探--无人生还" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-VUE2-app-音乐播放器功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/29/-%E4%BE%A6%E6%8E%A2%E4%BB%AC%E7%9A%84%E4%BE%A6%E6%8E%A2--%E6%97%A0%E4%BA%BA%E7%94%9F%E8%BF%98/">&lt;&lt;侦探们的侦探&gt;&gt;-无人生还</a>
+      <a class="article-title" href="/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/">uniapp 音乐播放器功能</a>
     </h1>
   
 
@@ -905,8 +829,8 @@
         
 
 
-<a href="/2020/05/29/-%E4%BE%A6%E6%8E%A2%E4%BB%AC%E7%9A%84%E4%BE%A6%E6%8E%A2--%E6%97%A0%E4%BA%BA%E7%94%9F%E8%BF%98/" class="archive-article-date">
-  	<time datetime="2020-05-29T14:28:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-29</time>
+<a href="/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/" class="archive-article-date">
+  	<time datetime="2022-09-25T02:10:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-25</time>
 </a>
 
 
@@ -916,170 +840,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="lt-lt-侦探们的侦探-gt-gt-无人生还"><a href="#lt-lt-侦探们的侦探-gt-gt-无人生还" class="headerlink" title="&lt;&lt;侦探们的侦探&gt;&gt;-无人生还"></a>&lt;&lt;侦探们的侦探&gt;&gt;-无人生还</h1><p><em><strong>悬疑类短文</strong></em></p>
-<h2 id="歇洛克篇"><a href="#歇洛克篇" class="headerlink" title="歇洛克篇"></a>歇洛克篇</h2><p> &emsp;&emsp;“情况相当糟糕呢！”<br> &emsp;&emsp;歇洛克抓了下脑门皱着眉头看向波洛，可语气中却没有一丝担心反而带着点调侃。<br> &emsp;&emsp;波洛扬了扬眉毛，裂开他那标志性的大嘴，无声的笑了笑。“我说过你不应该来，歇洛克。这是我家族的财产分配问题，你一个外人凑什么热闹？”<br>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/创作//" class="article-tag-list-link color3">创作</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/29/-%E4%BE%A6%E6%8E%A2%E4%BB%AC%E7%9A%84%E4%BE%A6%E6%8E%A2--%E6%97%A0%E4%BA%BA%E7%94%9F%E8%BF%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-以前写的文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/29/%E4%BB%A5%E5%89%8D%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0/">白蚯蚓之回不去</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2020/05/29/%E4%BB%A5%E5%89%8D%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-05-29T14:12:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-29</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="白蚯蚓"><a href="#白蚯蚓" class="headerlink" title="白蚯蚓"></a>白蚯蚓</h1><p><em><strong>悬疑类短文</strong></em><br>&emsp;&emsp;天色逐渐暗了下来，天空中开始出现了点点的繁星，周围的沙沙声也渐渐停息了下来。<br>&emsp;&emsp;男孩愣愣的坐在石头上，低下头看向山下远处村子里亮起的微光，眼中不禁泛起了阵阵涟漪。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/创作//" class="article-tag-list-link color3">创作</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/29/%E4%BB%A5%E5%89%8D%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ios打包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/28/ios%E6%89%93%E5%8C%85/">ios打包</a>
-    </h1>
-  
-
-        
-        
-
-
-<a href="/2019/10/28/ios%E6%89%93%E5%8C%85/" class="archive-article-date">
-  	<time datetime="2019-10-28T02:10:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-28</time>
-</a>
-
-
-        
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>需要后缀名为<code>.P12</code>和<code>.mobileprovision</code>文件，这两个文件代表<code>ios证书</code>和<code>描述文件</code>。</p>
-<blockquote>
-<p>xcode如果出问题<br>最好先 <code>ionic cordova build ios</code>,<br>然后<br>打开<code>platform</code>文件夹中的 <code>xxxxxx.xcworkspace</code><br>（xcode第一次打包所需要配置的选项）：</p>
+        <h1 id="uniapp-移动端的音乐播放器"><a href="#uniapp-移动端的音乐播放器" class="headerlink" title="uniapp 移动端的音乐播放器"></a>uniapp 移动端的音乐播放器</h1><h2 id="写的原因"><a href="#写的原因" class="headerlink" title="写的原因"></a>写的原因</h2><blockquote>
+<p>这个<code>app</code>从4月份开始，做了一个星期，但中间有3个月没碰，8月末又重新拿了起来，但由于<code>uniapp</code>的多次更新，导致<code>app</code>出了问题，而且本人是刚学的vue2，3个月没碰，有些遗忘，需要重新学习才行，同时这个<code>app</code>遇到的问题有些难以处理。<br>因此我想先整理出我一开始做出来的功能，以便后期如果需要重新开始，则可以把我想要的功能重新添加进去。</p>
 </blockquote>
         
       
@@ -1094,7 +856,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ios</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">uniapp</a>
         		</li>
       		
 		</ul>
@@ -1115,7 +881,172 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/28/ios%E6%89%93%E5%8C%85/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/09/25/VUE2-app-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-开发中防止忘记的功能和bug点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/09/11/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8Cbug%E7%82%B9/">开发中防止忘记的功能和bug点</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2022/09/11/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8Cbug%E7%82%B9/" class="archive-article-date">
+  	<time datetime="2022-09-11T12:35:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-11</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.需要文章免登录查看，文章可以不需要登录就能看（已处理，修改id表的读取权限，改成了都能read，就能跳过权限）<br>2.登录页面有报错，一键登录退出时有报错（新版本）,登录页面使用原始navigateBar<br>3.其中一个登录页面返回按钮有问题 (已处理，去掉此页面中样式，样式读取了一个css文件，此文件修改了当前页面的格式)<br>4.前面改好后，需要验证发布更新功能,(无法使用更新功能，需要进行debug判断才行)<br>5.数据库数据通过云函数来进行获取<br>4.登录时默认是图片,但打开确实list列表<br>5.list最后出现undefined, 可能和数据库读取有关，新版本遇到的情况。<br>4.其中一个登录页面有两个导航栏（navBar）,应该去掉原生的那个，保留自己的。</p>
+<p>uniapp page.json 页面配置中添加 “navigationStyle”: “custom”，取消原生导航栏<br>navigationStyle导航栏样式，仅支持 default/custom。custom即取消默认的原生导航栏</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/09/11/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8Cbug%E7%82%B9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue2+uniapp+unicloud项目遇到问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/">vue2+uniapp+unicloud项目遇到问题</a>
+    </h1>
+  
+
+        
+        
+
+
+<a href="/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-05-31T05:36:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-31</time>
+</a>
+
+
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="2022-9-10更新"><a href="#2022-9-10更新" class="headerlink" title="2022-9-10更新"></a>2022-9-10更新</h2><p>我做了一个vue2的app。<br>在h5上面将程序写完，移动端打包后发现程序根本没法用，不能说没法用，只能说不怎么样。<br>由于是移动端，所以现在把遇到的一些问题和需求总结下。</p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">uniapp</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/technology//" class="article-tag-list-link color1">technology</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/05/31/vue2+uniapp+unicloud%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/">展开全文 >></a>
         </p>
       
 
@@ -1147,7 +1078,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1161,7 +1092,7 @@
 		<!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 		<script async src="/busuanzi.pure.js"></script>
 		<div class="footer-left">
-    		&copy; 2023 Rayqian
+    		&copy; 2025 Rayqian
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
